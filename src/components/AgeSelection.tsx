@@ -35,12 +35,12 @@ const AgeSelection = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-primary/20 to-secondary/20">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-dark via-dark/90 to-dark/80">
       <div className="text-center mb-12 animate-scale-in">
-        <h1 className="text-4xl font-bold mb-4 text-gray-800">
+        <h1 className="text-4xl font-bold mb-4 text-white">
           ¡Aprendamos Ciberseguridad!
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-gray-300">
           Elige tu grupo de edad para comenzar
         </p>
       </div>

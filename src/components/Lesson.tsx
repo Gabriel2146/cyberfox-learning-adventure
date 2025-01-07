@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { Check, X } from "lucide-react";
+import { Check, X, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Lesson = () => {
@@ -76,10 +76,18 @@ const Lesson = () => {
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary/20 to-secondary/20 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-dark via-dark/90 to-dark/80 p-6">
+      <button
+        onClick={() => navigate('/lessons')}
+        className="absolute top-4 left-4 text-white hover:text-primary transition-colors flex items-center gap-2"
+      >
+        <ArrowLeft className="w-5 h-5" />
+        Volver
+      </button>
+
+      <div className="max-w-4xl mx-auto pt-16">
         <div className="mb-8">
-          <div className="h-2 bg-gray-200 rounded-full">
+          <div className="h-2 bg-gray-700 rounded-full">
             <div
               className="h-2 bg-primary rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
@@ -87,8 +95,8 @@ const Lesson = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-8 shadow-lg animate-scale-in">
-          <h2 className="text-2xl font-bold mb-6">
+        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 shadow-lg animate-scale-in border border-white/20">
+          <h2 className="text-2xl font-bold mb-6 text-white">
             {questions[currentQuestion].question}
           </h2>
 
@@ -97,7 +105,7 @@ const Lesson = () => {
               <button
                 key={index}
                 onClick={() => handleAnswer(index)}
-                className="p-4 border-2 border-gray-200 rounded-lg text-left hover:border-primary hover:bg-primary/10 transition-colors button-hover"
+                className="p-4 border-2 border-white/20 rounded-lg text-left hover:border-primary hover:bg-primary/10 transition-colors button-hover text-white"
               >
                 {option}
               </button>

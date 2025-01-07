@@ -40,6 +40,10 @@ export default {
           DEFAULT: "#FFB74D",
           foreground: "#000000",
         },
+        dark: {
+          DEFAULT: "#1A1F2C",
+          foreground: "#FFFFFF",
+        },
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
