@@ -25,6 +25,10 @@ const Lesson = () => {
           "Tu comida favorita",
         ],
         correctAnswer: 0,
+        feedback: {
+          correct: "¡Excelente! Tu dirección es información privada que nunca debes compartir en línea. Mantener esta información privada te ayuda a estar seguro.",
+          incorrect: "Recuerda: Tu dirección de casa es información privada y personal. Compartirla en línea puede ser peligroso porque personas malintencionadas podrían usarla."
+        }
       },
       {
         question: "Si alguien desconocido te pide información personal, ¿qué debes hacer?",
@@ -35,6 +39,10 @@ const Lesson = () => {
           "Compartir si parece amable",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Muy bien! Ignorar y bloquear es la mejor opción. No importa cuán amables parezcan, los desconocidos en línea pueden tener malas intenciones.",
+          incorrect: "La acción más segura es ignorar y bloquear. Nunca sabemos las verdaderas intenciones de los desconocidos en línea, incluso si parecen amables."
+        }
       },
       {
         question: "¿Cuál de estos datos es seguro compartir en línea?",
@@ -45,6 +53,10 @@ const Lesson = () => {
           "El nombre de tu escuela",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Correcto! Compartir tus intereses generales como tu deporte favorito es seguro. Esta información no puede ser usada para identificarte o hacerte daño.",
+          incorrect: "Tu deporte favorito es seguro de compartir porque es información general que no puede usarse para identificarte. Otros datos como teléfono o escuela son privados."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien te pide una foto tuya en internet?",
@@ -55,6 +67,10 @@ const Lesson = () => {
           "Pedir una foto suya primero",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Es importante proteger tu privacidad. Nunca debes enviar fotos a desconocidos.",
+          incorrect: "Recuerda, siempre es mejor decir que no y avisar a un adulto. La seguridad es lo primero."
+        }
       },
       {
         question: "¿Cuál es una buena regla para usar redes sociales?",
@@ -65,6 +81,10 @@ const Lesson = () => {
           "Dar like a todo lo que ves",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Exacto! Solo debes conectar con personas que conoces en la vida real. Esto te ayuda a mantenerte seguro.",
+          incorrect: "Recuerda, conectar solo con personas que conoces es una buena práctica para proteger tu información personal."
+        }
       },
       {
         question: "Si un juego en línea te pide tu dirección para darte un premio, ¿qué debes hacer?",
@@ -75,6 +95,10 @@ const Lesson = () => {
           "Preguntar a otros jugadores qué hacer",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Nunca debes dar información personal a juegos en línea. Es mejor proteger tu privacidad.",
+          incorrect: "Recuerda, si un juego te pide información personal, es mejor no darla y cerrar el juego."
+        }
       },
       {
         question: "¿Qué información es segura para usar en tu nombre de usuario?",
@@ -85,6 +109,10 @@ const Lesson = () => {
           "Tu número de teléfono",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Bien hecho! Usar un apodo es una buena forma de mantener tu información personal segura.",
+          incorrect: "Recuerda, siempre es mejor usar un apodo que no revele tu información personal en línea."
+        }
       },
       {
         question: "Si alguien comparte tu información personal sin permiso, ¿qué debes hacer?",
@@ -95,6 +123,10 @@ const Lesson = () => {
           "Esperar a que se olvide",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Correcto! Siempre debes avisar a un adulto de confianza si alguien comparte tu información sin permiso.",
+          incorrect: "Recuerda, es importante avisar a un adulto si alguien comparte tu información personal sin tu permiso."
+        }
       },
       {
         question: "¿Por qué es importante proteger tu información personal?",
@@ -105,6 +137,10 @@ const Lesson = () => {
           "Para ser más popular",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Exacto! Proteger tu información personal es crucial para mantenerte a salvo en línea.",
+          incorrect: "Recuerda, proteger tu información personal es importante para evitar que personas malintencionadas la usen."
+        }
       },
       {
         question: "¿Qué debes hacer antes de unirte a un nuevo juego o red social?",
@@ -115,6 +151,10 @@ const Lesson = () => {
           "Invitar a todos tus amigos",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Siempre es bueno consultar con tus padres o tutores antes de unirte a algo nuevo en línea.",
+          incorrect: "Recuerda, consultar con tus padres o tutores es una buena práctica antes de unirte a un nuevo juego o red social."
+        }
       },
     ],
     "passwords": [
@@ -127,6 +167,10 @@ const Lesson = () => {
           "Escribir tu contraseña en un papel",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Excelente! Una contraseña fuerte debe combinar letras, números y símbolos. Esto la hace más difícil de adivinar o hackear.",
+          incorrect: "Las contraseñas más seguras combinan letras, números y símbolos. Evita usar información personal o contraseñas simples que sean fáciles de adivinar."
+        }
       },
       {
         question: "¿Con qué frecuencia debes cambiar tu contraseña?",
@@ -137,6 +181,10 @@ const Lesson = () => {
           "Solo si alguien la descubre",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Correcto! Cambiar tu contraseña cada pocos meses ayuda a mantener tu cuenta segura.",
+          incorrect: "Recuerda, es importante cambiar tu contraseña regularmente para proteger tu información."
+        }
       },
       {
         question: "¿Qué debes hacer si olvidas tu contraseña?",
@@ -147,6 +195,10 @@ const Lesson = () => {
           "No hacer nada",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Usar la opción de 'olvidé mi contraseña' es la forma correcta de recuperar el acceso a tu cuenta.",
+          incorrect: "Recuerda, si olvidas tu contraseña, siempre puedes usar la opción de recuperación."
+        }
       },
       {
         question: "¿Es seguro compartir tu contraseña con amigos?",
@@ -157,6 +209,10 @@ const Lesson = () => {
           "Sí, si es para un juego",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Nunca debes compartir tu contraseña, incluso con amigos. Es importante mantenerla privada.",
+          incorrect: "Recuerda, compartir tu contraseña nunca es seguro. Siempre debe permanecer privada."
+        }
       },
       {
         question: "¿Qué tipo de contraseña es más segura?",
@@ -167,6 +223,10 @@ const Lesson = () => {
           "abcdefg",
         ],
         correctAnswer: 2,
+        feedback: {
+          correct: "¡Correcto! Usar una combinación de letras, números y símbolos es la mejor manera de crear una contraseña segura.",
+          incorrect: "Recuerda, las contraseñas simples son fáciles de adivinar. Siempre usa combinaciones más complejas."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien intenta acceder a tu cuenta?",
@@ -177,6 +237,10 @@ const Lesson = () => {
           "No hacer nada",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Cambiar tu contraseña inmediatamente es la mejor forma de proteger tu cuenta.",
+          incorrect: "Recuerda, si alguien intenta acceder a tu cuenta, siempre debes cambiar tu contraseña de inmediato."
+        }
       },
       {
         question: "¿Qué es un administrador de contraseñas?",
@@ -187,6 +251,10 @@ const Lesson = () => {
           "Un juego de computadora",
         ],
         correctAnswer: 0,
+        feedback: {
+          correct: "¡Correcto! Un administrador de contraseñas es una herramienta útil para mantener tus contraseñas seguras.",
+          incorrect: "Recuerda, un administrador de contraseñas puede ayudarte a gestionar y proteger tus contraseñas."
+        }
       },
       {
         question: "¿Por qué es importante tener contraseñas diferentes para cada cuenta?",
@@ -197,6 +265,10 @@ const Lesson = () => {
           "Para que todos puedan acceder a tus cuentas",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Usar contraseñas diferentes ayuda a proteger tus cuentas en caso de que una sea comprometida.",
+          incorrect: "Recuerda, tener contraseñas únicas para cada cuenta es crucial para tu seguridad en línea."
+        }
       },
       {
         question: "¿Qué es una contraseña de un solo uso?",
@@ -207,6 +279,10 @@ const Lesson = () => {
           "Una contraseña que es muy larga",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Las contraseñas de un solo uso son útiles para aumentar la seguridad en transacciones.",
+          incorrect: "Recuerda, las contraseñas de un solo uso son temporales y se utilizan para una sola sesión."
+        }
       },
       {
         question: "¿Qué debes hacer si recibes un correo electrónico pidiendo tu contraseña?",
@@ -217,6 +293,10 @@ const Lesson = () => {
           "Contarle a un adulto",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Siempre debes ignorar y eliminar correos sospechosos que piden tu contraseña.",
+          incorrect: "Recuerda, nunca debes responder a correos que piden tu contraseña. Siempre es mejor ignorarlos."
+        }
       },
     ],
     "online-safety": [
@@ -229,6 +309,10 @@ const Lesson = () => {
           "Hacer lo mismo que él",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Muy bien! Contarle a un adulto de confianza es la mejor opción. Ellos pueden ayudarte a manejar la situación de forma segura.",
+          incorrect: "Siempre es mejor contarle a un adulto de confianza cuando alguien te molesta en línea. Ellos pueden ayudarte y tomar las acciones necesarias."
+        }
       },
       {
         question: "¿Es seguro chatear con extraños en línea?",
@@ -239,6 +323,10 @@ const Lesson = () => {
           "Sí, si no compartes información personal",
         ],
         correctAnswer: 3,
+        feedback: {
+          correct: "¡Correcto! Chatear con extraños puede ser riesgoso, pero si no compartes información personal, es más seguro.",
+          incorrect: "Recuerda, siempre hay riesgos al chatear con extraños. Mantén tu información personal privada."
+        }
       },
       {
         question: "¿Qué es un virus informático?",
@@ -249,6 +337,10 @@ const Lesson = () => {
           "Un tipo de contraseña",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Un virus informático puede dañar tu computadora y robar información. Es importante tener un buen antivirus.",
+          incorrect: "Recuerda, un virus informático es un programa dañino. Siempre debes proteger tu computadora con software de seguridad."
+        }
       },
       {
         question: "¿Qué debes hacer si recibes un enlace sospechoso?",
@@ -259,6 +351,10 @@ const Lesson = () => {
           "Preguntar a un adulto",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Ignorar y eliminar enlaces sospechosos es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes hacer clic en enlaces sospechosos. Siempre es mejor ignorarlos."
+        }
       },
       {
         question: "¿Por qué es importante tener un antivirus en tu computadora?",
@@ -269,6 +365,10 @@ const Lesson = () => {
           "Para que sea más rápida",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un antivirus protege tu computadora de amenazas y virus que pueden robar información.",
+          incorrect: "Recuerda, tener un antivirus es crucial para mantener tu computadora segura de virus y ataques."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien te pide información personal en un juego?",
@@ -279,6 +379,10 @@ const Lesson = () => {
           "No hacer nada",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Siempre debes decir que no y avisar a un adulto si alguien te pide información personal.",
+          incorrect: "Recuerda, nunca debes compartir información personal en juegos. Siempre es mejor proteger tu privacidad."
+        }
       },
       {
         question: "¿Qué es el ciberacoso?",
@@ -289,6 +393,10 @@ const Lesson = () => {
           "Cuando juegas en línea",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El ciberacoso es un problema serio y siempre debes reportarlo a un adulto.",
+          incorrect: "Recuerda, el ciberacoso es cuando alguien te molesta en línea. Siempre es importante hablar con un adulto sobre esto."
+        }
       },
       {
         question: "¿Es seguro usar la misma contraseña para todas tus cuentas?",
@@ -299,6 +407,10 @@ const Lesson = () => {
           "Sí, si la recuerdas",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Usar la misma contraseña es arriesgado. Si una cuenta se ve comprometida, todas tus cuentas están en peligro.",
+          incorrect: "Recuerda, siempre debes usar contraseñas diferentes para cada cuenta para mantenerte seguro."
+        }
       },
       {
         question: "¿Qué debes hacer si ves algo inapropiado en línea?",
@@ -309,6 +421,10 @@ const Lesson = () => {
           "Hacer una captura de pantalla",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Siempre debes contarle a un adulto si ves algo inapropiado en línea.",
+          incorrect: "Recuerda, reportar contenido inapropiado a un adulto es importante para tu seguridad."
+        }
       },
       {
         question: "¿Por qué es importante cerrar sesión en cuentas públicas?",
@@ -319,6 +435,10 @@ const Lesson = () => {
           "Para que sea más fácil acceder la próxima vez",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Cerrar sesión en cuentas públicas ayuda a proteger tu información personal de otros.",
+          incorrect: "Recuerda, siempre debes cerrar sesión en computadoras públicas para mantener tu información segura."
+        }
       },
     ],
     "scams": [
@@ -331,6 +451,10 @@ const Lesson = () => {
           "Un programa de computadora",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Las estafas son intentos de engañarte para robarte información o dinero. Es importante aprender a identificarlas.",
+          incorrect: "Recuerda, una estafa es un engaño para robarte información o dinero. Los estafadores usan trucos para parecer confiables, pero debemos estar alerta."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien te ofrece un premio que parece demasiado bueno para ser verdad?",
@@ -341,6 +465,10 @@ const Lesson = () => {
           "Preguntar a un adulto",
         ],
         correctAnswer: 3,
+        feedback: {
+          correct: "¡Bien hecho! Siempre es mejor preguntar a un adulto si algo parece demasiado bueno para ser verdad.",
+          incorrect: "Recuerda, si algo parece demasiado bueno para ser verdad, es mejor preguntar a un adulto antes de actuar."
+        }
       },
       {
         question: "¿Es seguro compartir información personal para ganar un premio?",
@@ -351,6 +479,10 @@ const Lesson = () => {
           "Sí, si parece real",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Nunca debes compartir información personal, incluso si te ofrecen un premio.",
+          incorrect: "Recuerda, compartir información personal para ganar premios nunca es seguro. Siempre protege tu información."
+        }
       },
       {
         question: "¿Qué es un phishing?",
@@ -361,6 +493,10 @@ const Lesson = () => {
           "Un programa de computadora",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El phishing es un intento de engañarte para que compartas información personal.",
+          incorrect: "Recuerda, el phishing es un engaño para robar tu información. Siempre verifica la fuente antes de compartir datos."
+        }
       },
       {
         question: "¿Qué debes hacer si recibes un mensaje sospechoso?",
@@ -371,6 +507,10 @@ const Lesson = () => {
           "Hacer clic en los enlaces",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Ignorar y eliminar mensajes sospechosos es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes responder a mensajes sospechosos. Siempre es mejor ignorarlos."
+        }
       },
       {
         question: "¿Es seguro comprar cosas en línea sin preguntar a un adulto?",
@@ -381,6 +521,10 @@ const Lesson = () => {
           "Sí, si es un buen sitio",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Siempre debes preguntar a un adulto antes de hacer compras en línea.",
+          incorrect: "Recuerda, preguntar a un adulto antes de comprar en línea es importante para tu seguridad."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien te pide dinero en línea?",
@@ -391,6 +535,10 @@ const Lesson = () => {
           "No hacer nada",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Siempre debes decir que no y avisar a un adulto si alguien te pide dinero en línea.",
+          incorrect: "Recuerda, nunca debes enviar dinero a personas que conoces solo en línea. Siempre es mejor avisar a un adulto."
+        }
       },
       {
         question: "¿Qué es un 'esquema piramidal'?",
@@ -401,6 +549,10 @@ const Lesson = () => {
           "Un programa de computadora",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un esquema piramidal es un tipo de estafa que promete ganancias a cambio de dinero.",
+          incorrect: "Recuerda, los esquemas piramidales son ilegales y siempre debes evitarlos."
+        }
       },
       {
         question: "¿Es seguro hacer clic en anuncios en línea?",
@@ -411,6 +563,10 @@ const Lesson = () => {
           "Sí, si son divertidos",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Muchos anuncios en línea pueden ser engañosos. Siempre verifica antes de hacer clic.",
+          incorrect: "Recuerda, hacer clic en anuncios puede ser riesgoso. Siempre verifica la fuente antes de interactuar."
+        }
       },
       {
         question: "¿Qué debes hacer si alguien te pide que compartas tu contraseña?",
@@ -421,6 +577,10 @@ const Lesson = () => {
           "No hacer nada",
         ],
         correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Nunca debes compartir tu contraseña, incluso si parece que es un amigo.",
+          incorrect: "Recuerda, siempre debes proteger tu contraseña y nunca compartirla con nadie."
+        }
       },
     ],
   };
@@ -435,18 +595,19 @@ const Lesson = () => {
   const handleAnswer = (selectedIndex: number) => {
     console.log(`Selected answer: ${selectedIndex}`);
     const isCorrect = selectedIndex === currentLesson[currentQuestion].correctAnswer;
+    const feedback = currentLesson[currentQuestion].feedback;
     
     if (isCorrect) {
       toast({
-        title: "¡Correcto!",
-        description: "¡Muy bien! Sigamos aprendiendo.",
+        title: "¡Correcto! 🎉",
+        description: feedback.correct,
         variant: "default",
       });
       setScore(score + 1);
     } else {
       toast({
-        title: "Incorrecto",
-        description: "¡Inténtalo de nuevo!",
+        title: "Incorrecto ❌",
+        description: feedback.incorrect,
         variant: "destructive",
       });
     }
