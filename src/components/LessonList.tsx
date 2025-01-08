@@ -10,7 +10,38 @@ const LessonList = () => {
   
   console.log(`Rendering LessonList component for age group: ${ageGroup}`);
 
-  const lessons = [
+  const youthLessons = [
+    {
+      id: "cybersecurity",
+      title: "Ciberseguridad Avanzada",
+      description: "Aprende sobre phishing, malware y protección en línea",
+      icon: Shield,
+      progress: 0,
+    },
+    {
+      id: "online-privacy",
+      title: "Privacidad en Línea",
+      description: "Protege tu identidad digital y datos personales",
+      icon: User,
+      progress: 0,
+    },
+    {
+      id: "digital-footprint",
+      title: "Huella Digital",
+      description: "Gestiona tu presencia en línea responsablemente",
+      icon: AlertTriangle,
+      progress: 0,
+    },
+    {
+      id: "secure-browsing",
+      title: "Navegación Segura",
+      description: "Aprende a navegar de forma segura en internet",
+      icon: Key,
+      progress: 0,
+    },
+  ];
+
+  const kidLessons = [
     {
       id: "personal-info",
       title: "No compartas información personal",
@@ -41,9 +72,11 @@ const LessonList = () => {
     },
   ];
 
+  const lessons = ageGroup === "teens" ? youthLessons : kidLessons;
+
   const handleLessonSelect = (lessonId: string) => {
     console.log(`Selected lesson: ${lessonId}`);
-    if (lessonId === "personal-info") {
+    if (lessonId === lessons[0].id) {
       navigate(`/lesson/${lessonId}?age=${ageGroup}`);
     } else {
       toast({
