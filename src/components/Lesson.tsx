@@ -726,6 +726,390 @@ const Lesson = () => {
         }
       }
     ],
+    "online-privacy": [
+      {
+        question: "¿Qué es el seguimiento en línea (online tracking)?",
+        options: [
+          "Un sistema de GPS",
+          "Cómo las empresas recolectan datos sobre tu actividad en internet",
+          "Una app de ejercicio",
+          "Un antivirus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El seguimiento en línea es cómo las empresas recolectan información sobre tu comportamiento en internet para crear perfiles y mostrar publicidad dirigida.",
+          incorrect: "El seguimiento en línea se refiere a cómo las empresas recolectan y analizan tu actividad en internet. Es importante entender esto para proteger tu privacidad."
+        }
+      },
+      {
+        question: "¿Qué información es sensible y no deberías compartir en línea?",
+        options: [
+          "Tu nombre",
+          "Tu dirección de correo electrónico",
+          "Tu número de teléfono",
+          "Tu número de seguro social",
+        ],
+        correctAnswer: 3,
+        feedback: {
+          correct: "¡Exacto! Tu número de seguro social es información muy sensible y no deberías compartirlo en línea.",
+          incorrect: "Recuerda, tu número de seguro social es información muy sensible y no deberías compartirlo en línea."
+        }
+      },
+      {
+        question: "¿Qué es la configuración de privacidad en redes sociales?",
+        options: [
+          "Una forma de hacer amigos",
+          "Opciones que te permiten controlar quién ve tu información",
+          "Un tipo de contraseña",
+          "Un programa de computadora",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! La configuración de privacidad te permite controlar quién puede ver tu información y publicaciones en redes sociales.",
+          incorrect: "Recuerda, la configuración de privacidad es importante para proteger tu información en redes sociales."
+        }
+      },
+      {
+        question: "¿Por qué es importante leer los términos y condiciones?",
+        options: [
+          "Para entender cómo se usará tu información",
+          "Porque son muy divertidos",
+          "No es importante",
+          "Para hacer amigos",
+        ],
+        correctAnswer: 0,
+        feedback: {
+          correct: "¡Bien hecho! Leer los términos y condiciones te ayuda a entender cómo se usará tu información y qué derechos tienes.",
+          incorrect: "Recuerda, es importante leer los términos y condiciones para saber cómo se usará tu información."
+        }
+      },
+      {
+        question: "¿Qué es un 'cookie' en internet?",
+        options: [
+          "Un tipo de galleta",
+          "Un archivo que almacena información sobre tu actividad en un sitio web",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un 'cookie' es un archivo que almacena información sobre tu actividad en un sitio web para mejorar tu experiencia.",
+          incorrect: "Recuerda, los 'cookies' son archivos que almacenan información sobre tu actividad en un sitio web."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si recibes un mensaje sospechoso en redes sociales?",
+        options: [
+          "Ignorarlo",
+          "Responder y preguntar más",
+          "Compartirlo con amigos",
+          "Hacer clic en los enlaces",
+        ],
+        correctAnswer: 0,
+        feedback: {
+          correct: "¡Bien hecho! Ignorar mensajes sospechosos es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes responder a mensajes sospechosos. Siempre es mejor ignorarlos."
+        }
+      },
+      {
+        question: "¿Qué es la autenticación de dos factores?",
+        options: [
+          "Un tipo de contraseña",
+          "Un método de seguridad que requiere dos formas de verificación",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! La autenticación de dos factores añade una capa extra de seguridad a tus cuentas.",
+          incorrect: "Recuerda, la autenticación de dos factores es un método de seguridad que requiere dos formas de verificación."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si alguien te acosa en línea?",
+        options: [
+          "Ignorarlo",
+          "Contarle a un adulto",
+          "Hacer lo mismo que él",
+          "No hacer nada",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien! Contarle a un adulto es la mejor opción. Ellos pueden ayudarte a manejar la situación.",
+          incorrect: "Recuerda, siempre es mejor contarle a un adulto si alguien te acosa en línea."
+        }
+      },
+      {
+        question: "¿Qué es un perfil en línea?",
+        options: [
+          "Una forma de hacer amigos",
+          "La información que compartes sobre ti en internet",
+          "Un tipo de contraseña",
+          "Un programa de computadora",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Tu perfil en línea es la información que compartes sobre ti en internet.",
+          incorrect: "Recuerda, tu perfil en línea es la información que compartes sobre ti en internet."
+        }
+      },
+    ],
+    "digital-footprint": [
+      {
+        question: "¿Qué información permanece en internet aunque la borres?",
+        options: [
+          "Nada, todo se puede borrar",
+          "Solo las fotos",
+          "Todo lo que se ha compartido puede haber sido guardado por otros",
+          "Solo los mensajes",
+        ],
+        correctAnswer: 2,
+        feedback: {
+          correct: "¡Exacto! Una vez que algo se publica en internet, puede haber sido guardado o compartido por otros, haciendo imposible su eliminación completa.",
+          incorrect: "Recuerda que cualquier contenido que publicas en internet puede ser guardado por otros usuarios, incluso si lo borras después."
+        }
+      },
+      {
+        question: "¿Cómo puedes gestionar tu huella digital?",
+        options: [
+          "No publicando nada",
+          "Revisando y ajustando la configuración de privacidad",
+          "Compartiendo más información",
+          "No es importante",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Revisar y ajustar la configuración de privacidad te ayuda a gestionar tu huella digital.",
+          incorrect: "Recuerda, gestionar tu huella digital es importante para proteger tu privacidad en línea."
+        }
+      },
+      {
+        question: "¿Qué es un motor de búsqueda?",
+        options: [
+          "Un tipo de juego",
+          "Una herramienta que te ayuda a encontrar información en internet",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Un motor de búsqueda te ayuda a encontrar información en internet.",
+          incorrect: "Recuerda, un motor de búsqueda es una herramienta que te ayuda a encontrar información en internet."
+        }
+      },
+      {
+        question: "¿Por qué es importante ser consciente de tu huella digital?",
+        options: [
+          "Porque puede afectar tu reputación",
+          "Porque es divertido",
+          "No es importante",
+          "Para hacer amigos",
+        ],
+        correctAnswer: 0,
+        feedback: {
+          correct: "¡Correcto! Ser consciente de tu huella digital es importante porque puede afectar tu reputación.",
+          incorrect: "Recuerda, tu huella digital puede afectar tu reputación y oportunidades futuras."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si encuentras información falsa sobre ti en línea?",
+        options: [
+          "Ignorarlo",
+          "Contarle a un adulto",
+          "Tratar de borrarlo tú mismo",
+          "No hacer nada",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien! Contarle a un adulto es la mejor opción. Ellos pueden ayudarte a manejar la situación.",
+          incorrect: "Recuerda, siempre es mejor contarle a un adulto si encuentras información falsa sobre ti en línea."
+        }
+      },
+      {
+        question: "¿Qué es un 'hashtag'?",
+        options: [
+          "Un tipo de contraseña",
+          "Una forma de categorizar contenido en redes sociales",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un 'hashtag' es una forma de categorizar contenido en redes sociales.",
+          incorrect: "Recuerda, los 'hashtags' son útiles para categorizar contenido en redes sociales."
+        }
+      },
+      {
+        question: "¿Qué es un 'perfil público'?",
+        options: [
+          "Una forma de hacer amigos",
+          "Un perfil que cualquiera puede ver",
+          "Un tipo de contraseña",
+          "Un programa de computadora",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Un perfil público es un perfil que cualquiera puede ver.",
+          incorrect: "Recuerda, un perfil público es un perfil que cualquiera puede ver."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si alguien comparte información personal tuya sin permiso?",
+        options: [
+          "No hacer nada",
+          "Contarle a un adulto",
+          "Compartir su información también",
+          "Ignorarlo",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Siempre debes contarle a un adulto si alguien comparte información personal tuya sin permiso.",
+          incorrect: "Recuerda, es importante contarle a un adulto si alguien comparte información personal tuya sin permiso."
+        }
+      },
+      {
+        question: "¿Qué es un 'meme'?",
+        options: [
+          "Una forma de arte",
+          "Una imagen o video que se comparte en internet con un mensaje humorístico",
+          "Un tipo de contraseña",
+          "Un programa de computadora",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Un 'meme' es una imagen o video que se comparte en internet con un mensaje humorístico.",
+          incorrect: "Recuerda, los 'memes' son imágenes o videos que se comparten en internet con un mensaje humorístico."
+        }
+      },
+    ],
+    "secure-browsing": [
+      {
+        question: "¿Qué es un certificado SSL?",
+        options: [
+          "Un programa antivirus",
+          "Un protocolo que asegura la conexión entre tu navegador y el sitio web",
+          "Una licencia de software",
+          "Un tipo de contraseña",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! SSL es un protocolo de seguridad que cifra la comunicación entre tu navegador y el sitio web, protegiendo tus datos.",
+          incorrect: "SSL es un protocolo de seguridad importante que protege tus datos cuando navegas en internet, especialmente en sitios que manejan información sensible."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si un sitio web parece sospechoso?",
+        options: [
+          "Hacer clic en todos los enlaces",
+          "Ignorarlo y salir",
+          "Compartirlo con amigos",
+          "Hacer una captura de pantalla",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Ignorar sitios web sospechosos es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes interactuar con sitios web que parecen sospechosos."
+        }
+      },
+      {
+        question: "¿Qué es un 'firewall'?",
+        options: [
+          "Un tipo de antivirus",
+          "Una barrera de seguridad que protege tu red",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un 'firewall' es una barrera de seguridad que protege tu red de accesos no autorizados.",
+          incorrect: "Recuerda, un 'firewall' es importante para proteger tu red de accesos no autorizados."
+        }
+      },
+      {
+        question: "¿Por qué es importante actualizar tu software regularmente?",
+        options: [
+          "Para tener más espacio en tu computadora",
+          "Para mejorar la seguridad y corregir errores",
+          "No es importante",
+          "Para hacer amigos",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Actualizar tu software regularmente mejora la seguridad y corrige errores.",
+          incorrect: "Recuerda, es importante actualizar tu software regularmente para mejorar la seguridad."
+        }
+      },
+      {
+        question: "¿Qué es un 'malware'?",
+        options: [
+          "Un tipo de juego",
+          "Un software diseñado para dañar o infiltrarse en sistemas",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El 'malware' es un software diseñado para dañar o infiltrarse en sistemas.",
+          incorrect: "Recuerda, el 'malware' es un software dañino que puede afectar tu computadora."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si recibes un correo electrónico sospechoso?",
+        options: [
+          "Hacer clic en los enlaces",
+          "Ignorarlo y eliminarlo",
+          "Responder y preguntar más",
+          "Compartirlo con amigos",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Ignorar y eliminar correos electrónicos sospechosos es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes interactuar con correos electrónicos sospechosos."
+        }
+      },
+      {
+        question: "¿Qué es un 'phishing'?",
+        options: [
+          "Un tipo de juego",
+          "Un intento de engañarte para que compartas información personal",
+          "Una forma de ganar dinero",
+          "Un programa de computadora",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El 'phishing' es un intento de engañarte para que compartas información personal.",
+          incorrect: "Recuerda, el 'phishing' es un engaño para robar tu información."
+        }
+      },
+      {
+        question: "¿Qué es un 'VPN'?",
+        options: [
+          "Un tipo de antivirus",
+          "Una red privada virtual que protege tu conexión a internet",
+          "Un programa de computadora",
+          "Una red social",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Un 'VPN' es una red privada virtual que protege tu conexión a internet.",
+          incorrect: "Recuerda, un 'VPN' es importante para proteger tu conexión a internet."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si un sitio web te pide información personal?",
+        options: [
+          "Dar la información",
+          "Ignorarlo y salir",
+          "Preguntar a un amigo",
+          "No hacer nada",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Ignorar sitios web que piden información personal es la mejor forma de protegerte.",
+          incorrect: "Recuerda, nunca debes dar información personal a sitios web sospechosos."
+        }
+      },
+    ],
   };
 
   const currentLesson = questions[lessonId as keyof typeof questions];
@@ -807,3 +1191,4 @@ const Lesson = () => {
 };
 
 export default Lesson;
+
