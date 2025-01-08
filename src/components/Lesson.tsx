@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { youthQuestions } from "./questions/YouthQuestions";
 
 const Lesson = () => {
   const { lessonId } = useParams();
@@ -582,6 +583,148 @@ const Lesson = () => {
           incorrect: "Recuerda, siempre debes proteger tu contraseña y nunca compartirla con nadie."
         }
       },
+    ],
+    "cybersecurity": [
+      {
+        question: "¿Qué es el phishing y cómo puedes identificarlo?",
+        options: [
+          "Un virus que daña tu computadora",
+          "Un intento de robar información haciéndose pasar por una entidad confiable",
+          "Una red social nueva",
+          "Un tipo de contraseña segura",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El phishing es un tipo de estafa donde los atacantes se hacen pasar por entidades confiables para robar información. Es importante verificar siempre la autenticidad de los correos y mensajes que recibimos.",
+          incorrect: "El phishing es una técnica de engaño donde los estafadores se hacen pasar por entidades confiables (bancos, redes sociales, etc.) para robar información personal. Siempre verifica la autenticidad de los remitentes y enlaces."
+        }
+      },
+      {
+        question: "¿Cuál es una buena práctica para proteger tus cuentas en línea?",
+        options: [
+          "Usar la misma contraseña en todas las cuentas",
+          "Compartir tus contraseñas con amigos de confianza",
+          "Activar la autenticación de dos factores",
+          "Guardar las contraseñas en notas del teléfono",
+        ],
+        correctAnswer: 2,
+        feedback: {
+          correct: "¡Excelente! La autenticación de dos factores añade una capa extra de seguridad a tus cuentas, haciendo más difícil que los hackers accedan incluso si conocen tu contraseña.",
+          incorrect: "La autenticación de dos factores es una medida de seguridad adicional que requiere un segundo paso para verificar tu identidad, como un código enviado a tu teléfono."
+        }
+      },
+      {
+        question: "¿Qué debes hacer si sospechas que tu cuenta ha sido hackeada?",
+        options: [
+          "No hacer nada y esperar",
+          "Cambiar inmediatamente la contraseña y activar la autenticación de dos factores",
+          "Publicar en redes sociales que te hackearon",
+          "Crear una nueva cuenta y abandonar la anterior",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Cambiar la contraseña inmediatamente y activar medidas de seguridad adicionales son los primeros pasos cruciales para proteger tu cuenta.",
+          incorrect: "Cuando sospechas que tu cuenta ha sido comprometida, es crucial actuar rápidamente cambiando la contraseña y activando medidas de seguridad adicionales para prevenir más daños."
+        }
+      },
+      {
+        question: "¿Qué es el ransomware?",
+        options: [
+          "Un programa que bloquea tus archivos y pide dinero para recuperarlos",
+          "Un antivirus gratuito",
+          "Una red social segura",
+          "Un tipo de contraseña",
+        ],
+        correctAnswer: 0,
+        feedback: {
+          correct: "¡Exacto! El ransomware es un tipo de malware que encripta tus archivos y exige un pago para desbloquearlos. Es importante mantener copias de seguridad y no abrir archivos sospechosos.",
+          incorrect: "El ransomware es un tipo de malware peligroso que secuestra tus archivos pidiendo un rescate. Para protegerte, mantén copias de seguridad y ten cuidado con los archivos que descargas."
+        }
+      },
+      {
+        question: "¿Cuál es una señal de que un sitio web es seguro para compras en línea?",
+        options: [
+          "Tiene muchas ofertas y descuentos",
+          "El candado de seguridad (HTTPS) en la barra de direcciones",
+          "Usa muchas imágenes llamativas",
+          "Pide pago solo en efectivo",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! El candado y HTTPS indican que la conexión está cifrada y es segura para transmitir datos sensibles como información de pago.",
+          incorrect: "El candado de seguridad (HTTPS) en la barra de direcciones indica que la conexión está cifrada y es segura. Siempre verifica esto antes de hacer compras en línea."
+        }
+      },
+      {
+        question: "¿Qué es el 'sexting' y por qué es peligroso?",
+        options: [
+          "Una red social nueva",
+          "Compartir contenido íntimo por mensajes, lo cual puede ser usado para extorsión",
+          "Un tipo de mensaje cifrado",
+          "Una aplicación de mensajería",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El sexting puede tener graves consecuencias, ya que el contenido compartido puede ser usado para extorsión o distribuido sin consentimiento.",
+          incorrect: "El sexting es compartir contenido íntimo por mensajes, lo cual es muy peligroso porque ese contenido puede ser usado para extorsión o compartido sin permiso."
+        }
+      },
+      {
+        question: "¿Qué es el 'grooming' en línea?",
+        options: [
+          "Un juego en línea",
+          "Cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos",
+          "Una red social para adolescentes",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! El grooming es una forma de acoso donde adultos intentan ganarse la confianza de menores con fines dañinos. Es importante estar alerta y reportar comportamientos sospechosos.",
+          incorrect: "El grooming es cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos. Es importante reconocer las señales y mantener la privacidad en línea."
+        }
+      },
+      {
+        question: "¿Qué precauciones debes tomar al usar redes WiFi públicas?",
+        options: [
+          "Conectarse a cualquier red disponible",
+          "Usar una VPN y evitar acceder a cuentas bancarias",
+          "Compartir la conexión con otros",
+          "Desactivar el firewall",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Las redes WiFi públicas pueden ser inseguras. Usar una VPN y evitar actividades sensibles es la mejor manera de protegerte.",
+          incorrect: "En redes WiFi públicas, es importante usar una VPN y evitar acceder a información sensible como cuentas bancarias, ya que pueden ser interceptadas."
+        }
+      },
+      {
+        question: "¿Qué es el 'cyberbullying' y cómo enfrentarlo?",
+        options: [
+          "Un juego en línea",
+          "Acoso a través de medios digitales que debe ser reportado y documentado",
+          "Una red social nueva",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien! El cyberbullying es acoso digital y debe ser tomado en serio. Documenta la evidencia, bloquea al acosador y reporta el comportamiento.",
+          incorrect: "El cyberbullying es acoso a través de medios digitales. Es importante documentar la evidencia, bloquear al acosador y reportar el comportamiento a las autoridades correspondientes."
+        }
+      },
+      {
+        question: "¿Qué es la 'huella digital' y por qué es importante?",
+        options: [
+          "Una marca en la pantalla",
+          "El rastro de actividades que dejamos en internet",
+          "Un tipo de contraseña",
+          "Un virus informático",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Tu huella digital es el rastro permanente que dejas en internet. Lo que publicas hoy puede afectar tu futuro personal y profesional.",
+          incorrect: "La huella digital es el rastro de todas tus actividades en internet. Es importante ser consciente de ella porque puede afectar tu reputación y oportunidades futuras."
+        }
+      }
     ],
   };
 
