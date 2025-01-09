@@ -1,5 +1,5 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft } from "lucide-react";
+import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft, Smartphone, Wifi, CreditCard } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const LessonList = () => {
@@ -72,7 +72,49 @@ const LessonList = () => {
     },
   ];
 
-  const lessons = ageGroup === "teens" ? youthLessons : kidLessons;
+  const seniorLessons = [
+    {
+      id: "basic-security",
+      title: "Seguridad Básica",
+      description: "Conceptos fundamentales de seguridad en línea",
+      icon: Shield,
+      progress: 0,
+    },
+    {
+      id: "mobile-security",
+      title: "Seguridad en el Móvil",
+      description: "Protege tu teléfono y aplicaciones",
+      icon: Smartphone,
+      progress: 0,
+    },
+    {
+      id: "wifi-security",
+      title: "Seguridad en Redes WiFi",
+      description: "Aprende a usar redes WiFi de forma segura",
+      icon: Wifi,
+      progress: 0,
+    },
+    {
+      id: "banking-security",
+      title: "Banca en Línea Segura",
+      description: "Realiza operaciones bancarias con seguridad",
+      icon: CreditCard,
+      progress: 0,
+    },
+  ];
+
+  const getLessons = () => {
+    switch(ageGroup) {
+      case "teens":
+        return youthLessons;
+      case "seniors":
+        return seniorLessons;
+      default:
+        return kidLessons;
+    }
+  };
+
+  const lessons = getLessons();
 
   const handleLessonSelect = (lessonId: string) => {
     console.log(`Selected lesson: ${lessonId}`);
