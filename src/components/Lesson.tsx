@@ -586,143 +586,143 @@ const Lesson = () => {
     ],
     "cybersecurity": [
       {
-        question: "¿Qué es el phishing y cómo puedes identificarlo?",
+        question: "¿Qué medidas de seguridad son importantes para proteger una red doméstica?",
         options: [
-          "Un virus que daña tu computadora",
-          "Un intento de robar información haciéndose pasar por una entidad confiable",
-          "Una red social nueva",
-          "Un tipo de contraseña segura",
+          "Usar cualquier contraseña",
+          "Configurar un firewall y cambiar contraseñas regularmente",
+          "Dejar la red abierta",
+          "No hacer nada",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Correcto! El phishing es un tipo de estafa donde los atacantes se hacen pasar por entidades confiables para robar información. Es importante verificar siempre la autenticidad de los correos y mensajes que recibimos.",
-          incorrect: "El phishing es una técnica de engaño donde los estafadores se hacen pasar por entidades confiables (bancos, redes sociales, etc.) para robar información personal. Siempre verifica la autenticidad de los remitentes y enlaces."
+          correct: "¡Excelente! Configurar un firewall y cambiar contraseñas regularmente son medidas básicas de seguridad para proteger su red.",
+          incorrect: "Es importante mantener su red segura con un firewall y contraseñas fuertes que se cambien regularmente."
         }
       },
       {
-        question: "¿Cuál es una buena práctica para proteger tus cuentas en línea?",
+        question: "¿Qué debe hacer si recibe un correo electrónico de su banco pidiendo información?",
         options: [
-          "Usar la misma contraseña en todas las cuentas",
-          "Compartir tus contraseñas con amigos de confianza",
-          "Activar la autenticación de dos factores",
-          "Guardar las contraseñas en notas del teléfono",
-        ],
-        correctAnswer: 2,
-        feedback: {
-          correct: "¡Excelente! La autenticación de dos factores añade una capa extra de seguridad a tus cuentas, haciendo más difícil que los hackers accedan incluso si conocen tu contraseña.",
-          incorrect: "La autenticación de dos factores es una medida de seguridad adicional que requiere un segundo paso para verificar tu identidad, como un código enviado a tu teléfono."
-        }
-      },
-      {
-        question: "¿Qué debes hacer si sospechas que tu cuenta ha sido hackeada?",
-        options: [
-          "No hacer nada y esperar",
-          "Cambiar inmediatamente la contraseña y activar la autenticación de dos factores",
-          "Publicar en redes sociales que te hackearon",
-          "Crear una nueva cuenta y abandonar la anterior",
+          "Responder inmediatamente",
+          "Llamar directamente al banco para verificar",
+          "Hacer clic en los enlaces",
+          "Compartir la información solicitada",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Correcto! Cambiar la contraseña inmediatamente y activar medidas de seguridad adicionales son los primeros pasos cruciales para proteger tu cuenta.",
-          incorrect: "Cuando sospechas que tu cuenta ha sido comprometida, es crucial actuar rápidamente cambiando la contraseña y activando medidas de seguridad adicionales para prevenir más daños."
+          correct: "¡Correcto! Siempre es mejor contactar directamente al banco para verificar cualquier solicitud de información.",
+          incorrect: "Nunca responda directamente a correos que solicitan información sensible. Contacte a su banco directamente."
         }
       },
       {
-        question: "¿Qué es el ransomware?",
+        question: "¿Cómo puede proteger sus documentos importantes en la computadora?",
         options: [
-          "Un programa que bloquea tus archivos y pide dinero para recuperarlos",
-          "Un antivirus gratuito",
-          "Una red social segura",
-          "Un tipo de contraseña",
-        ],
-        correctAnswer: 0,
-        feedback: {
-          correct: "¡Exacto! El ransomware es un tipo de malware que encripta tus archivos y exige un pago para desbloquearlos. Es importante mantener copias de seguridad y no abrir archivos sospechosos.",
-          incorrect: "El ransomware es un tipo de malware peligroso que secuestra tus archivos pidiendo un rescate. Para protegerte, mantén copias de seguridad y ten cuidado con los archivos que descargas."
-        }
-      },
-      {
-        question: "¿Cuál es una señal de que un sitio web es seguro para compras en línea?",
-        options: [
-          "Tiene muchas ofertas y descuentos",
-          "El candado de seguridad (HTTPS) en la barra de direcciones",
-          "Usa muchas imágenes llamativas",
-          "Pide pago solo en efectivo",
+          "Guardarlos sin protección",
+          "Crear copias de seguridad y usar contraseñas",
+          "Compartirlos por email",
+          "No hacer copias",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Bien hecho! El candado y HTTPS indican que la conexión está cifrada y es segura para transmitir datos sensibles como información de pago.",
-          incorrect: "El candado de seguridad (HTTPS) en la barra de direcciones indica que la conexión está cifrada y es segura. Siempre verifica esto antes de hacer compras en línea."
+          correct: "¡Exacto! Crear copias de seguridad y proteger con contraseñas es esencial para mantener seguros sus documentos.",
+          incorrect: "Es importante mantener copias de seguridad y proteger sus documentos con contraseñas."
         }
       },
       {
-        question: "¿Qué es el 'sexting' y por qué es peligroso?",
+        question: "¿Qué debe hacer si alguien le pide dinero por internet?",
         options: [
-          "Una red social nueva",
-          "Compartir contenido íntimo por mensajes, lo cual puede ser usado para extorsión",
-          "Un tipo de mensaje cifrado",
-          "Una aplicación de mensajería",
+          "Enviar el dinero rápidamente",
+          "Verificar cuidadosamente y consultar con familia",
+          "Ignorar completamente",
+          "Compartir información bancaria",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Correcto! El sexting puede tener graves consecuencias, ya que el contenido compartido puede ser usado para extorsión o distribuido sin consentimiento.",
-          incorrect: "El sexting es compartir contenido íntimo por mensajes, lo cual es muy peligroso porque ese contenido puede ser usado para extorsión o compartido sin permiso."
+          correct: "¡Bien hecho! Siempre es importante verificar y consultar con familia antes de realizar transacciones en línea.",
+          incorrect: "Nunca envíe dinero sin verificar cuidadosamente y consultar con familia o personas de confianza."
         }
       },
       {
-        question: "¿Qué es el 'grooming' en línea?",
+        question: "¿Cómo puede proteger sus contraseñas de manera segura?",
         options: [
-          "Un juego en línea",
-          "Cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos",
-          "Una red social para adolescentes",
-          "Un tipo de virus",
+          "Escribirlas en un papel",
+          "Usar un gestor de contraseñas seguro",
+          "Compartirlas con amigos",
+          "Usar la misma para todo",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Exacto! El grooming es una forma de acoso donde adultos intentan ganarse la confianza de menores con fines dañinos. Es importante estar alerta y reportar comportamientos sospechosos.",
-          incorrect: "El grooming es cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos. Es importante reconocer las señales y mantener la privacidad en línea."
+          correct: "¡Correcto! Un gestor de contraseñas es la forma más segura de almacenar sus contraseñas.",
+          incorrect: "Un gestor de contraseñas es la mejor opción para mantener sus contraseñas seguras y organizadas."
         }
       },
       {
-        question: "¿Qué precauciones debes tomar al usar redes WiFi públicas?",
+        question: "¿Qué precauciones debe tomar al usar redes WiFi públicas?",
         options: [
-          "Conectarse a cualquier red disponible",
-          "Usar una VPN y evitar acceder a cuentas bancarias",
-          "Compartir la conexión con otros",
-          "Desactivar el firewall",
+          "Usar sin precaución",
+          "Evitar acceder a cuentas bancarias y usar VPN",
+          "Compartir archivos libremente",
+          "Conectarse a cualquier red",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Correcto! Las redes WiFi públicas pueden ser inseguras. Usar una VPN y evitar actividades sensibles es la mejor manera de protegerte.",
-          incorrect: "En redes WiFi públicas, es importante usar una VPN y evitar acceder a información sensible como cuentas bancarias, ya que pueden ser interceptadas."
+          correct: "¡Exacto! En redes públicas, es importante evitar acceder a información sensible y usar VPN para protegerse.",
+          incorrect: "Las redes WiFi públicas pueden ser peligrosas. Use VPN y evite acceder a información sensible."
         }
       },
       {
-        question: "¿Qué es el 'cyberbullying' y cómo enfrentarlo?",
+        question: "¿Cómo puede identificar un sitio web seguro?",
         options: [
-          "Un juego en línea",
-          "Acoso a través de medios digitales que debe ser reportado y documentado",
-          "Una red social nueva",
-          "Un tipo de virus",
+          "Por sus colores llamativos",
+          "Buscando el candado de seguridad y https",
+          "Por su publicidad",
+          "Por sus ofertas",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Bien! El cyberbullying es acoso digital y debe ser tomado en serio. Documenta la evidencia, bloquea al acosador y reporta el comportamiento.",
-          incorrect: "El cyberbullying es acoso a través de medios digitales. Es importante documentar la evidencia, bloquear al acosador y reportar el comportamiento a las autoridades correspondientes."
+          correct: "¡Correcto! El candado de seguridad y https indican que un sitio web es seguro.",
+          incorrect: "Busque siempre el candado de seguridad y https para verificar que un sitio web es seguro."
         }
       },
       {
-        question: "¿Qué es la 'huella digital' y por qué es importante?",
+        question: "¿Qué debe hacer si olvida su contraseña?",
         options: [
-          "Una marca en la pantalla",
-          "El rastro de actividades que dejamos en internet",
-          "Un tipo de contraseña",
-          "Un virus informático",
+          "Crear una cuenta nueva",
+          "Usar el proceso oficial de recuperación",
+          "Pedir a un amigo",
+          "Intentar adivinarla",
         ],
         correctAnswer: 1,
         feedback: {
-          correct: "¡Exacto! Tu huella digital es el rastro permanente que dejas en internet. Lo que publicas hoy puede afectar tu futuro personal y profesional.",
-          incorrect: "La huella digital es el rastro de todas tus actividades en internet. Es importante ser consciente de ella porque puede afectar tu reputación y oportunidades futuras."
+          correct: "¡Bien! Siempre use el proceso oficial de recuperación de contraseña del servicio.",
+          incorrect: "El proceso oficial de recuperación de contraseña es la forma más segura de recuperar su acceso."
+        }
+      },
+      {
+        question: "¿Cómo puede proteger sus dispositivos móviles?",
+        options: [
+          "No usar contraseña",
+          "Usar PIN, huella digital y mantener actualizado",
+          "Prestar el dispositivo",
+          "No hacer copias de seguridad",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Usar PIN, huella digital y mantener el dispositivo actualizado son medidas importantes de seguridad.",
+          incorrect: "Es importante proteger su dispositivo móvil con PIN, huella digital y mantenerlo actualizado."
+        }
+      },
+      {
+        question: "¿Qué debe hacer si recibe mensajes o llamadas sospechosas?",
+        options: [
+          "Responder inmediatamente",
+          "Ignorar, bloquear y reportar",
+          "Compartir información",
+          "Llamar de vuelta",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Ignorar, bloquear y reportar es la mejor manera de manejar comunicaciones sospechosas.",
+          incorrect: "Ante mensajes o llamadas sospechosas, lo mejor es ignorar, bloquear y reportar."
         }
       }
     ],
@@ -1078,7 +1078,7 @@ const Lesson = () => {
         correctAnswer: 1,
         feedback: {
           correct: "¡Correcto! El 'phishing' es un intento de engañarte para que compartas información personal.",
-          incorrect: "Recuerda, el 'phishing' es un engaño para robar tu información."
+          incorrect: "Recuerda, el 'phishing' es un intento de engañarte para robar tu información."
         }
       },
       {
@@ -1191,4 +1191,3 @@ const Lesson = () => {
 };
 
 export default Lesson;
-
