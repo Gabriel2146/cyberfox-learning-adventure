@@ -15,7 +15,200 @@ const Lesson = () => {
 
   console.log(`Rendering Lesson component for lesson: ${lessonId}, age group: ${ageGroup}`);
 
-  const questions = {
+  const seniorQuestions = {
+    "basic-security": [
+      {
+        question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+        options: [
+          "Un programa para jugar",
+          "Un programa que protege contra software malicioso",
+          "Una aplicación de redes sociales",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
+          incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        }
+      },
+      {
+        question: "¿Qué debe hacer si recibe un correo electrónico sospechoso?",
+        options: [
+          "Abrirlo inmediatamente",
+          "No abrirlo y eliminarlo",
+          "Reenviarlo a amigos",
+          "Hacer clic en todos los enlaces",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Es mejor no abrir correos sospechosos y eliminarlos directamente.",
+          incorrect: "Por seguridad, es mejor no abrir correos sospechosos y eliminarlos directamente."
+        }
+      },
+      {
+        question: "¿Cuál es una buena práctica para las contraseñas?",
+        options: [
+          "Usar la misma para todo",
+          "Usar combinaciones de letras, números y símbolos",
+          "Compartirlas con amigos",
+          "Escribirlas en un papel",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Las contraseñas seguras deben combinar letras, números y símbolos.",
+          incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección."
+        }
+      },
+      {
+        question: "¿Qué hacer si alguien solicita sus datos bancarios por teléfono?",
+        options: [
+          "Darlos inmediatamente",
+          "Nunca compartirlos y contactar al banco directamente",
+          "Compartirlos si parece urgente",
+          "Pedir consejo a un amigo",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien hecho! Nunca comparta datos bancarios por teléfono y siempre contacte directamente a su banco.",
+          incorrect: "Por seguridad, nunca comparta datos bancarios por teléfono. Contacte directamente a su banco."
+        }
+      },
+      {
+        question: "¿Cómo proteger sus documentos importantes en la computadora?",
+        options: [
+          "No hacer nada especial",
+          "Crear copias de seguridad y usar contraseñas",
+          "Compartirlos por email",
+          "Dejarlos sin protección",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Es importante tener copias de seguridad y proteger sus documentos con contraseñas.",
+          incorrect: "Para proteger sus documentos, es importante crear copias de seguridad y usar contraseñas."
+        }
+      },
+      {
+        question: "¿Qué es el phishing?",
+        options: [
+          "Un deporte",
+          "Un intento de robo de información personal",
+          "Una red social",
+          "Un tipo de correo normal",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El phishing es un intento de robar su información personal haciéndose pasar por entidades confiables.",
+          incorrect: "El phishing es cuando alguien intenta robar su información personal haciéndose pasar por entidades confiables."
+        }
+      },
+      {
+        question: "¿Qué hacer si olvida su contraseña?",
+        options: [
+          "Crear una cuenta nueva",
+          "Usar la opción de recuperación oficial",
+          "Pedirle a un amigo",
+          "No hacer nada",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Bien! Siempre use el proceso oficial de recuperación de contraseña.",
+          incorrect: "Use siempre el proceso oficial de recuperación de contraseña del servicio."
+        }
+      },
+      {
+        question: "¿Cómo reconocer un sitio web seguro?",
+        options: [
+          "Por sus colores",
+          "Por el candado de seguridad y https",
+          "Por su publicidad",
+          "Por sus ofertas",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! El candado y https indican que un sitio web es seguro.",
+          incorrect: "Los sitios web seguros muestran un candado y usan https en su dirección."
+        }
+      },
+      {
+        question: "¿Qué hacer si una página pide actualizar su software?",
+        options: [
+          "Actualizar inmediatamente",
+          "Verificar que sea legítimo y actualizar desde fuentes oficiales",
+          "Ignorar siempre",
+          "Preguntar en redes sociales",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Exacto! Siempre verifique y actualice desde fuentes oficiales.",
+          incorrect: "Es importante verificar y solo actualizar software desde fuentes oficiales."
+        }
+      },
+      {
+        question: "¿Cómo proteger su red WiFi doméstica?",
+        options: [
+          "Dejarla abierta",
+          "Usar contraseña fuerte y cambiarla regularmente",
+          "Compartir la contraseña",
+          "No usar contraseña",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Una contraseña fuerte y cambiarla regularmente protege su red WiFi.",
+          incorrect: "Para proteger su red WiFi, use una contraseña fuerte y cámbiela regularmente."
+        }
+      }
+    ],
+    "mobile-security": [
+      {
+        question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+        options: [
+          "Un programa para jugar",
+          "Un programa que protege contra software malicioso",
+          "Una aplicación de redes sociales",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
+          incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        }
+      }
+    ],
+    "wifi-security": [
+      {
+        question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+        options: [
+          "Un programa para jugar",
+          "Un programa que protege contra software malicioso",
+          "Una aplicación de redes sociales",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
+          incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        }
+      }
+    ],
+    "banking-security": [
+      {
+        question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+        options: [
+          "Un programa para jugar",
+          "Un programa que protege contra software malicioso",
+          "Una aplicación de redes sociales",
+          "Un tipo de virus",
+        ],
+        correctAnswer: 1,
+        feedback: {
+          correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
+          incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        }
+      }
+    ]
+  };
+
+  const questions = ageGroup === "seniors" ? seniorQuestions[lessonId as keyof typeof seniorQuestions] : {
     "personal-info": [
       {
         question: "¿Qué información NO debes compartir en línea?",
