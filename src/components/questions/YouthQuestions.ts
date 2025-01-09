@@ -140,5 +140,77 @@ export const youthQuestions = {
         incorrect: "La huella digital es el rastro de todas tus actividades en internet. Es importante ser consciente de ella porque puede afectar tu reputación y oportunidades futuras."
       }
     }
+  ],
+  "personal-info": [
+    {
+      question: "¿Qué información personal NO debes compartir en internet?",
+      options: [
+        "Tu color favorito",
+        "Tu dirección de casa y teléfono",
+        "Tus juegos favoritos",
+        "Tu comida preferida",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Nunca debes compartir tu dirección ni teléfono en internet para mantenerte seguro.",
+        incorrect: "No debes compartir información personal como tu dirección o teléfono en internet. ¡Es importante mantener esta información privada!"
+      }
+    },
+    {
+      question: "Si alguien que no conoces te pide información personal en internet, ¿qué debes hacer?",
+      options: [
+        "Darle la información si es amable",
+        "No compartir nada y avisar a un adulto de confianza",
+        "Pedirle su información primero",
+        "Compartir solo un poco de información",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Excelente! Siempre debes avisar a un adulto de confianza y nunca compartir información con extraños.",
+        incorrect: "Nunca debes compartir información con extraños en internet. Siempre avisa a un adulto de confianza."
+      }
+    },
+    {
+      question: "¿Cuál es una contraseña segura?",
+      options: [
+        "12345",
+        "Una combinación de letras, números y símbolos",
+        "Tu nombre",
+        "Tu fecha de nacimiento",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Muy bien! Una contraseña segura debe combinar letras, números y símbolos para proteger tus cuentas.",
+        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos. Evita usar información personal o secuencias simples."
+      }
+    },
+    {
+      question: "¿Qué debes hacer si alguien te pide fotos por internet?",
+      options: [
+        "Enviar las fotos si parece amigable",
+        "Decir no y avisar a tus padres o un adulto de confianza",
+        "Pedir fotos primero",
+        "Ignorar el mensaje",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Siempre debes decir no y avisar a un adulto de confianza si alguien te pide fotos.",
+        incorrect: "Nunca envíes fotos a extraños por internet. Siempre avisa a tus padres o un adulto de confianza."
+      }
+    },
+    {
+      question: "¿Qué información es segura compartir en línea?",
+      options: [
+        "Tu dirección de casa",
+        "Tus pasatiempos y intereses generales",
+        "El nombre de tu escuela",
+        "El horario en que no hay nadie en casa",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Bien hecho! Compartir intereses generales es seguro, mientras que la información personal debe mantenerse privada.",
+        incorrect: "Solo es seguro compartir información general como pasatiempos. La información personal debe mantenerse privada."
+      }
+    }
   ]
 };
