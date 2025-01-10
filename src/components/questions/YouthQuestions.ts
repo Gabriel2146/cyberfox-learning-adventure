@@ -1,301 +1,161 @@
 export const youthQuestions = {
-  "cybersecurity": [
-    {
-      question: "¿Qué es el phishing y cómo puedes identificarlo?",
-      options: [
-        "Un virus que daña tu computadora",
-        "Un intento de robar información haciéndose pasar por una entidad confiable",
-        "Una red social nueva",
-        "Un tipo de contraseña segura",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! El phishing es un tipo de estafa donde los atacantes se hacen pasar por entidades confiables para robar información. Es importante verificar siempre la autenticidad de los correos y mensajes que recibimos.",
-        incorrect: "El phishing es una técnica de engaño donde los estafadores se hacen pasar por entidades confiables (bancos, redes sociales, etc.) para robar información personal. Siempre verifica la autenticidad de los remitentes y enlaces."
-      }
-    },
-    {
-      question: "¿Cuál es una buena práctica para proteger tus cuentas en línea?",
-      options: [
-        "Usar la misma contraseña en todas las cuentas",
-        "Compartir tus contraseñas con amigos de confianza",
-        "Activar la autenticación de dos factores",
-        "Guardar las contraseñas en notas del teléfono",
-      ],
-      correctAnswer: 2,
-      feedback: {
-        correct: "¡Excelente! La autenticación de dos factores añade una capa extra de seguridad a tus cuentas, haciendo más difícil que los hackers accedan incluso si conocen tu contraseña.",
-        incorrect: "La autenticación de dos factores es una medida de seguridad adicional que requiere un segundo paso para verificar tu identidad, como un código enviado a tu teléfono."
-      }
-    },
-    {
-      question: "¿Qué debes hacer si sospechas que tu cuenta ha sido hackeada?",
-      options: [
-        "No hacer nada y esperar",
-        "Cambiar inmediatamente la contraseña y activar la autenticación de dos factores",
-        "Publicar en redes sociales que te hackearon",
-        "Crear una nueva cuenta y abandonar la anterior",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Cambiar la contraseña inmediatamente y activar medidas de seguridad adicionales son los primeros pasos cruciales para proteger tu cuenta.",
-        incorrect: "Cuando sospechas que tu cuenta ha sido comprometida, es crucial actuar rápidamente cambiando la contraseña y activando medidas de seguridad adicionales para prevenir más daños."
-      }
-    },
-    {
-      question: "¿Qué es el ransomware?",
-      options: [
-        "Un programa que bloquea tus archivos y pide dinero para recuperarlos",
-        "Un antivirus gratuito",
-        "Una red social segura",
-        "Un tipo de contraseña",
-      ],
-      correctAnswer: 0,
-      feedback: {
-        correct: "¡Exacto! El ransomware es un tipo de malware que encripta tus archivos y exige un pago para desbloquearlos. Es importante mantener copias de seguridad y no abrir archivos sospechosos.",
-        incorrect: "El ransomware es un tipo de malware peligroso que secuestra tus archivos pidiendo un rescate. Para protegerte, mantén copias de seguridad y ten cuidado con los archivos que descargas."
-      }
-    },
-    {
-      question: "¿Cuál es una señal de que un sitio web es seguro para compras en línea?",
-      options: [
-        "Tiene muchas ofertas y descuentos",
-        "El candado de seguridad (HTTPS) en la barra de direcciones",
-        "Usa muchas imágenes llamativas",
-        "Pide pago solo en efectivo",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Bien hecho! El candado y HTTPS indican que la conexión está cifrada y es segura para transmitir datos sensibles como información de pago.",
-        incorrect: "El candado de seguridad (HTTPS) en la barra de direcciones indica que la conexión está cifrada y es segura. Siempre verifica esto antes de hacer compras en línea."
-      }
-    },
-    {
-      question: "¿Qué es el 'sexting' y por qué es peligroso?",
-      options: [
-        "Una red social nueva",
-        "Compartir contenido íntimo por mensajes, lo cual puede ser usado para extorsión",
-        "Un tipo de mensaje cifrado",
-        "Una aplicación de mensajería",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! El sexting puede tener graves consecuencias, ya que el contenido compartido puede ser usado para extorsión o distribuido sin consentimiento.",
-        incorrect: "El sexting es compartir contenido íntimo por mensajes, lo cual es muy peligroso porque ese contenido puede ser usado para extorsión o compartido sin permiso."
-      }
-    },
-    {
-      question: "¿Qué es el 'grooming' en línea?",
-      options: [
-        "Un juego en línea",
-        "Cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos",
-        "Una red social para adolescentes",
-        "Un tipo de virus",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! El grooming es una forma de acoso donde adultos intentan ganarse la confianza de menores con fines dañinos. Es importante estar alerta y reportar comportamientos sospechosos.",
-        incorrect: "El grooming es cuando un adulto intenta ganarse la confianza de un menor con fines maliciosos. Es importante reconocer las señales y mantener la privacidad en línea."
-      }
-    },
-    {
-      question: "¿Qué precauciones debes tomar al usar redes WiFi públicas?",
-      options: [
-        "Conectarse a cualquier red disponible",
-        "Usar una VPN y evitar acceder a cuentas bancarias",
-        "Compartir la conexión con otros",
-        "Desactivar el firewall",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Las redes WiFi públicas pueden ser inseguras. Usar una VPN y evitar actividades sensibles es la mejor manera de protegerte.",
-        incorrect: "En redes WiFi públicas, es importante usar una VPN y evitar acceder a información sensible como cuentas bancarias, ya que pueden ser interceptadas."
-      }
-    },
-    {
-      question: "¿Qué es el 'cyberbullying' y cómo enfrentarlo?",
-      options: [
-        "Un juego en línea",
-        "Acoso a través de medios digitales que debe ser reportado y documentado",
-        "Una red social nueva",
-        "Un tipo de virus",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Bien! El cyberbullying es acoso digital y debe ser tomado en serio. Documenta la evidencia, bloquea al acosador y reporta el comportamiento.",
-        incorrect: "El cyberbullying es acoso a través de medios digitales. Es importante documentar la evidencia, bloquear al acosador y reportar el comportamiento a las autoridades correspondientes."
-      }
-    },
-    {
-      question: "¿Qué es la 'huella digital' y por qué es importante?",
-      options: [
-        "Una marca en la pantalla",
-        "El rastro de actividades que dejamos en internet",
-        "Un tipo de contraseña",
-        "Un virus informático",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! Tu huella digital es el rastro permanente que dejas en internet. Lo que publicas hoy puede afectar tu futuro personal y profesional.",
-        incorrect: "La huella digital es el rastro de todas tus actividades en internet. Es importante ser consciente de ella porque puede afectar tu reputación y oportunidades futuras."
-      }
-    }
-  ],
-
   "personal-info": [
     {
-      question: "¿Qué información personal NO debes compartir en internet?",
+      question: "¿Qué información personal no debes compartir en línea?",
       options: [
-        "Tu color favorito",
-        "Tu dirección de casa y teléfono",
-        "Tus juegos favoritos",
-        "Tu comida preferida",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Nunca debes compartir tu dirección ni teléfono en internet para mantenerte seguro.",
-        incorrect: "No debes compartir información personal como tu dirección o teléfono en internet. ¡Es importante mantener esta información privada!"
-      }
-    },
-    {
-      question: "Si alguien que no conoces te pide información personal en internet, ¿qué debes hacer?",
-      options: [
-        "Darle la información si es amable",
-        "No compartir nada y avisar a un adulto de confianza",
-        "Pedirle su información primero",
-        "Compartir solo un poco de información",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Excelente! Siempre debes avisar a un adulto de confianza y nunca compartir información con extraños.",
-        incorrect: "Nunca debes compartir información con extraños en internet. Siempre avisa a un adulto de confianza."
-      }
-    },
-    {
-      question: "¿Cuál es una contraseña segura?",
-      options: [
-        "12345",
-        "Una combinación de letras, números y símbolos",
         "Tu nombre",
-        "Tu fecha de nacimiento",
+        "Tu dirección y número de teléfono",
+        "Tu edad",
+        "Tu color favorito",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Una contraseña segura debe combinar letras, números y símbolos para proteger tus cuentas.",
-        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos. Evita usar información personal o secuencias simples."
-      }
-    },
-    {
-      question: "¿Qué debes hacer si alguien te pide fotos por internet?",
-      options: [
-        "Enviar las fotos si parece amigable",
-        "Decir no y avisar a tus padres o un adulto de confianza",
-        "Pedir fotos primero",
-        "Ignorar el mensaje",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Siempre debes decir no y avisar a un adulto de confianza si alguien te pide fotos.",
-        incorrect: "Nunca envíes fotos a extraños por internet. Siempre avisa a tus padres o un adulto de confianza."
-      }
-    },
-    {
-      question: "¿Qué información es segura compartir en línea?",
-      options: [
-        "Tu dirección de casa",
-        "Tus pasatiempos y intereses generales",
-        "El nombre de tu escuela",
-        "El horario en que no hay nadie en casa",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Bien hecho! Compartir intereses generales es seguro, mientras que la información personal debe mantenerse privada.",
-        incorrect: "Solo es seguro compartir información general como pasatiempos. La información personal debe mantenerse privada."
+        correct: "¡Correcto! Nunca debes compartir información sensible como tu dirección o número de teléfono.",
+        incorrect: "Es importante proteger tu información personal y no compartir datos sensibles en línea."
       }
     }
   ],
-
   "passwords": [
     {
-      question: "¿Por qué es importante cambiar tus contraseñas regularmente?",
+      question: "¿Cuál es una buena práctica para crear contraseñas?",
       options: [
-        "No es importante cambiarlas",
-        "Para mantener tus cuentas seguras y evitar que otros las descubran",
-        "Porque es divertido",
-        "Solo cuando te olvidas de ellas",
+        "Usar la misma contraseña para todo",
+        "Usar una combinación de letras, números y símbolos",
+        "Escribirla en un papel",
+        "Compartirla con amigos",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Cambiar tus contraseñas regularmente ayuda a mantener tus cuentas seguras.",
-        incorrect: "Es importante cambiar las contraseñas regularmente para proteger tus cuentas de personas que quieran acceder sin permiso."
+        correct: "¡Exacto! Las contraseñas seguras deben ser únicas y complejas.",
+        incorrect: "Las contraseñas deben ser fuertes y únicas para cada cuenta."
       }
     }
   ],
-
   "online-safety": [
     {
-      question: "¿Qué debes hacer si encuentras contenido inapropiado en internet?",
+      question: "¿Qué debes hacer si recibes un mensaje de un extraño?",
       options: [
-        "Compartirlo con amigos",
-        "Avisar a un adulto de confianza y cerrar la página",
-        "Seguir navegando",
-        "Guardarlo para después",
+        "Responder y preguntar quién es",
+        "Ignorarlo y no responder",
+        "Compartirlo con tus amigos",
+        "Contarles a tus padres",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! Siempre debes avisar a un adulto de confianza y cerrar el contenido inapropiado.",
-        incorrect: "Cuando encuentres contenido inapropiado, avisa a un adulto de confianza y cierra la página inmediatamente."
+        correct: "¡Correcto! Es mejor ignorar y no interactuar con extraños en línea.",
+        incorrect: "Siempre es mejor no responder a mensajes de extraños."
       }
     }
   ],
-
   "scams": [
     {
-      question: "¿Qué debes hacer si alguien te ofrece un premio gratis por internet?",
+      question: "¿Cómo puedes identificar una estafa en línea?",
       options: [
-        "Aceptarlo inmediatamente",
-        "No hacer clic y avisar a tus padres o un adulto de confianza",
-        "Compartir tus datos para reclamarlo",
-        "Reenviar la oferta a tus amigos",
+        "Prometen dinero fácil",
+        "Tienen errores de ortografía",
+        "Piden información personal",
+        "Todas las anteriores",
       ],
-      correctAnswer: 1,
+      correctAnswer: 3,
       feedback: {
-        correct: "¡Muy bien! Los premios 'gratis' suelen ser estafas. Siempre consulta con un adulto.",
-        incorrect: "Ten cuidado con los premios 'gratis' en internet, suelen ser estafas. Consulta siempre con un adulto de confianza."
+        correct: "¡Bien hecho! Todas estas son señales de una posible estafa.",
+        incorrect: "Las estafas suelen tener características comunes que debes aprender a identificar."
       }
     }
   ],
-
   "digital-footprint": [
     {
-      question: "¿Por qué debes pensar antes de publicar algo en internet?",
+      question: "¿Qué es una huella digital?",
       options: [
-        "No es necesario pensar",
-        "Porque lo que publicas queda guardado para siempre y otros pueden verlo",
-        "Solo si es una foto",
-        "Para ganar más likes",
+        "Las marcas que dejas al caminar",
+        "La información que dejas en línea",
+        "Un tipo de virus",
+        "Un programa de computadora",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Todo lo que publicas en internet puede quedar guardado para siempre.",
-        incorrect: "Es importante pensar antes de publicar porque lo que subes a internet puede quedar guardado para siempre y ser visto por otros."
+        correct: "¡Correcto! Tu huella digital es la información que dejas en internet.",
+        incorrect: "Es importante ser consciente de la información que compartes en línea."
       }
     }
   ],
-
   "secure-browsing": [
     {
-      question: "¿Cómo sabes si un sitio web es seguro?",
+      question: "¿Qué debes hacer para navegar de forma segura?",
       options: [
-        "Si tiene muchos colores",
-        "Si tiene un candado verde y 'https' al inicio de la dirección",
-        "Si tiene juegos gratis",
-        "Si tiene muchas publicidades",
+        "Usar redes WiFi públicas sin protección",
+        "Instalar un antivirus y usar contraseñas seguras",
+        "No usar contraseñas",
+        "Compartir tu contraseña con amigos",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! El candado verde y 'https' son señales de que un sitio web es seguro.",
-        incorrect: "Los sitios web seguros muestran un candado verde y tienen 'https' al inicio de su dirección."
+        correct: "¡Exacto! Mantener tu dispositivo protegido es clave para una navegación segura.",
+        incorrect: "Siempre debes proteger tu dispositivo y tus contraseñas."
+      }
+    }
+  ],
+  "cyberbullying": [
+    {
+      question: "¿Qué debes hacer si alguien te molesta en internet?",
+      options: [
+        "Responder de la misma manera",
+        "Avisar a tus padres o profesores y bloquear a esa persona",
+        "Ignorarlo y seguir usando internet",
+        "Dejar de usar internet",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Siempre debes avisar a un adulto de confianza y bloquear a quien te molesta.",
+        incorrect: "Es importante avisar a un adulto de confianza y bloquear a las personas que te molestan en internet."
+      }
+    }
+  ],
+  "safe-downloads": [
+    {
+      question: "¿Qué debes hacer antes de descargar un juego o aplicación?",
+      options: [
+        "Descargarlo inmediatamente",
+        "Pedir permiso a tus padres y verificar que sea seguro",
+        "Compartirlo con amigos",
+        "Descargar todo lo que encuentres",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Excelente! Siempre pide permiso y verifica que sea seguro antes de descargar.",
+        incorrect: "Antes de descargar algo, pide permiso a tus padres y asegúrate de que sea seguro."
+      }
+    }
+  ],
+  "social-media": [
+    {
+      question: "¿Qué configuración debes usar en tus redes sociales?",
+      options: [
+        "Perfil público para todos",
+        "Configuración privada y solo aceptar amigos que conoces",
+        "Aceptar todas las solicitudes de amistad",
+        "No usar configuración de privacidad",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Muy bien! Es importante mantener tus redes sociales privadas y solo aceptar amigos que conoces.",
+        incorrect: "Debes mantener tus redes sociales privadas y solo aceptar solicitudes de personas que conoces en la vida real."
+      }
+    }
+  ],
+  "privacy-settings": [
+    {
+      question: "¿Por qué es importante revisar la configuración de privacidad?",
+      options: [
+        "No es importante",
+        "Para controlar quién puede ver tu información",
+        "Solo si usas redes sociales",
+        "Para tener más amigos",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! La configuración de privacidad te ayuda a controlar quién puede ver tu información.",
+        incorrect: "La configuración de privacidad es importante porque te permite controlar quién puede ver tu información en internet."
       }
     }
   ]
