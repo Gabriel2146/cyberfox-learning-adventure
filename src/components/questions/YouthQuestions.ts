@@ -141,6 +141,7 @@ export const youthQuestions = {
       }
     }
   ],
+
   "personal-info": [
     {
       question: "¿Qué información personal NO debes compartir en internet?",
@@ -210,6 +211,91 @@ export const youthQuestions = {
       feedback: {
         correct: "¡Bien hecho! Compartir intereses generales es seguro, mientras que la información personal debe mantenerse privada.",
         incorrect: "Solo es seguro compartir información general como pasatiempos. La información personal debe mantenerse privada."
+      }
+    }
+  ],
+
+  "passwords": [
+    {
+      question: "¿Por qué es importante cambiar tus contraseñas regularmente?",
+      options: [
+        "No es importante cambiarlas",
+        "Para mantener tus cuentas seguras y evitar que otros las descubran",
+        "Porque es divertido",
+        "Solo cuando te olvidas de ellas",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Cambiar tus contraseñas regularmente ayuda a mantener tus cuentas seguras.",
+        incorrect: "Es importante cambiar las contraseñas regularmente para proteger tus cuentas de personas que quieran acceder sin permiso."
+      }
+    }
+  ],
+
+  "online-safety": [
+    {
+      question: "¿Qué debes hacer si encuentras contenido inapropiado en internet?",
+      options: [
+        "Compartirlo con amigos",
+        "Avisar a un adulto de confianza y cerrar la página",
+        "Seguir navegando",
+        "Guardarlo para después",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Excelente! Siempre debes avisar a un adulto de confianza y cerrar el contenido inapropiado.",
+        incorrect: "Cuando encuentres contenido inapropiado, avisa a un adulto de confianza y cierra la página inmediatamente."
+      }
+    }
+  ],
+
+  "scams": [
+    {
+      question: "¿Qué debes hacer si alguien te ofrece un premio gratis por internet?",
+      options: [
+        "Aceptarlo inmediatamente",
+        "No hacer clic y avisar a tus padres o un adulto de confianza",
+        "Compartir tus datos para reclamarlo",
+        "Reenviar la oferta a tus amigos",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Muy bien! Los premios 'gratis' suelen ser estafas. Siempre consulta con un adulto.",
+        incorrect: "Ten cuidado con los premios 'gratis' en internet, suelen ser estafas. Consulta siempre con un adulto de confianza."
+      }
+    }
+  ],
+
+  "digital-footprint": [
+    {
+      question: "¿Por qué debes pensar antes de publicar algo en internet?",
+      options: [
+        "No es necesario pensar",
+        "Porque lo que publicas queda guardado para siempre y otros pueden verlo",
+        "Solo si es una foto",
+        "Para ganar más likes",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Todo lo que publicas en internet puede quedar guardado para siempre.",
+        incorrect: "Es importante pensar antes de publicar porque lo que subes a internet puede quedar guardado para siempre y ser visto por otros."
+      }
+    }
+  ],
+
+  "secure-browsing": [
+    {
+      question: "¿Cómo sabes si un sitio web es seguro?",
+      options: [
+        "Si tiene muchos colores",
+        "Si tiene un candado verde y 'https' al inicio de la dirección",
+        "Si tiene juegos gratis",
+        "Si tiene muchas publicidades",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Excelente! El candado verde y 'https' son señales de que un sitio web es seguro.",
+        incorrect: "Los sitios web seguros muestran un candado verde y tienen 'https' al inicio de su dirección."
       }
     }
   ]
