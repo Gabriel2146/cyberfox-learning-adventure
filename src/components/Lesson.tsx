@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -215,18 +215,32 @@ const Lesson = () => {
   const { lessonId } = useParams();
   const [searchParams] = useSearchParams();
   const ageGroup = searchParams.get("age");
+  const mode = searchParams.get("mode");
   const navigate = useNavigate();
   const { toast } = useToast();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
+  const [allQuestions, setAllQuestions] = useState<Question[]>([]);
 
-  console.log(`Rendering Lesson component for lesson: ${lessonId}, age group: ${ageGroup}`);
+  console.log(`Rendering Lesson component for lesson: ${lessonId}, age group: ${ageGroup}, mode: ${mode}`);
 
-  const questions = ageGroup === "seniors" 
-    ? (lessonId && seniorQuestions[lessonId] ? seniorQuestions[lessonId] : [])
-    : (lessonId && youthQuestions[lessonId as keyof typeof youthQuestions] || []);
+  useEffect(() => {
+    if (mode === "sequential") {
+      // Combinar todas las preguntas de todas las lecciones
+      const questions = ageGroup === "seniors" 
+        ? Object.values(seniorQuestions).flat()
+        : Object.values(youthQuestions).flat();
+      setAllQuestions(questions);
+    } else {
+      // Modo normal: solo preguntas de la lección actual
+      const questions = ageGroup === "seniors" 
+        ? (lessonId && seniorQuestions[lessonId] ? seniorQuestions[lessonId] : [])
+        : (lessonId && youthQuestions[lessonId as keyof typeof youthQuestions] || []);
+      setAllQuestions(questions);
+    }
+  }, [lessonId, ageGroup, mode]);
 
-  if (!questions.length) {
+  if (!allQuestions.length) {
     console.log("No questions found, redirecting to lessons page");
     navigate('/lessons');
     return null;
@@ -234,8 +248,8 @@ const Lesson = () => {
 
   const handleAnswer = (selectedIndex: number) => {
     console.log(`Selected answer: ${selectedIndex}`);
-    const isCorrect = selectedIndex === questions[currentQuestion].correctAnswer;
-    const feedback = questions[currentQuestion].feedback;
+    const isCorrect = selectedIndex === allQuestions[currentQuestion].correctAnswer;
+    const feedback = allQuestions[currentQuestion].feedback;
     
     if (isCorrect) {
       toast({
@@ -252,14 +266,14 @@ const Lesson = () => {
       });
     }
 
-    if (currentQuestion < questions.length - 1) {
+    if (currentQuestion < allQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      navigate("/rewards", { state: { score, total: questions.length } });
+      navigate("/rewards", { state: { score, total: allQuestions.length } });
     }
   };
 
-  const progress = ((currentQuestion + 1) / questions.length) * 100;
+  const progress = ((currentQuestion + 1) / allQuestions.length) * 100;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-dark via-dark/90 to-dark/80 p-6">
@@ -283,11 +297,11 @@ const Lesson = () => {
 
         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 shadow-lg animate-scale-in border border-white/20">
           <h2 className="text-2xl font-bold mb-6 text-white">
-            {questions[currentQuestion].question}
+            {allQuestions[currentQuestion].question}
           </h2>
 
           <div className="grid gap-4">
-            {questions[currentQuestion].options.map((option, index) => (
+            {allQuestions[currentQuestion].options.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleAnswer(index)}

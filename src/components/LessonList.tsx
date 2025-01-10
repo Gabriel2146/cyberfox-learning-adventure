@@ -1,6 +1,7 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft, Smartphone, Wifi, CreditCard } from "lucide-react";
+import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
 
 const LessonList = () => {
   const navigate = useNavigate();
@@ -152,23 +153,15 @@ const LessonList = () => {
       case "seniors":
         return seniorLessons;
       default:
-        return youthLessons; // Cambiado de kidLessons a youthLessons para mostrar los 10 temas
+        return kidLessons;
     }
   };
 
   const lessons = getLessons();
 
-  const handleLessonSelect = (lessonId: string) => {
-    console.log(`Selected lesson: ${lessonId}`);
-    if (lessonId === lessons[0].id) {
-      navigate(`/lesson/${lessonId}?age=${ageGroup}`);
-    } else {
-      toast({
-        title: "Lección bloqueada",
-        description: "Completa las lecciones anteriores primero",
-        variant: "default",
-      });
-    }
+  const handleStartLearning = () => {
+    console.log("Starting learning journey");
+    navigate(`/lesson/personal-info?age=${ageGroup}&mode=sequential`);
   };
 
   return (
@@ -184,17 +177,22 @@ const LessonList = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-scale-in">
           <h1 className="text-4xl font-bold mb-4 text-white">Lecciones</h1>
-          <p className="text-lg text-gray-300">
-            Selecciona una lección para comenzar
+          <p className="text-lg text-gray-300 mb-8">
+            Selecciona una lección para comenzar o comienza el curso completo
           </p>
+          <Button 
+            onClick={handleStartLearning}
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg mb-12"
+          >
+            Comenzar a Aprender
+          </Button>
         </div>
 
         <div className="grid gap-6">
           {lessons.map((lesson, index) => (
-            <button
+            <div
               key={lesson.id}
-              onClick={() => handleLessonSelect(lesson.id)}
-              className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-lg flex items-center space-x-4 card-hover button-hover w-full text-white border border-white/20"
+              className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-lg flex items-center space-x-4 card-hover w-full text-white border border-white/20"
             >
               <div className={`p-3 rounded-full ${index === 0 ? "bg-primary" : "bg-gray-600"}`}>
                 <lesson.icon className="w-6 h-6" />
@@ -208,7 +206,7 @@ const LessonList = () => {
               ) : (
                 <Lock className="w-6 h-6 text-gray-400" />
               )}
-            </button>
+            </div>
           ))}
         </div>
       </div>
