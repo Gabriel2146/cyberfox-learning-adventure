@@ -157,8 +157,6 @@ const LessonList = () => {
     }
   };
 
-  const lessons = getLessons();
-
   const handleStartLearning = () => {
     console.log("Starting learning journey");
     navigate(`/lesson/personal-info?age=${ageGroup}&mode=sequential`);
@@ -189,10 +187,12 @@ const LessonList = () => {
         </div>
 
         <div className="grid gap-6">
-          {lessons.map((lesson, index) => (
+          {getLessons().map((lesson, index) => (
             <div
               key={lesson.id}
               className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-lg flex items-center space-x-4 card-hover w-full text-white border border-white/20"
+              onClick={() => navigate(`/lesson/${lesson.id}?age=${ageGroup}`)}
+              style={{ cursor: 'pointer' }}
             >
               <div className={`p-3 rounded-full ${index === 0 ? "bg-primary" : "bg-gray-600"}`}>
                 <lesson.icon className="w-6 h-6" />
