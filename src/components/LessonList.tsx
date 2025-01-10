@@ -1,5 +1,5 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft } from "lucide-react";
+import { Lock, Unlock, Shield, Key, User, AlertTriangle, ArrowLeft, Smartphone, Wifi, CreditCard } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 
