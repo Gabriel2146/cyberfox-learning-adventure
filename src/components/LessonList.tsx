@@ -160,32 +160,74 @@ const LessonList = () => {
   const seniorLessons = [
     {
       id: "basic-security",
-      title: "Seguridad Básica",
-      description: "Conceptos fundamentales de seguridad en línea",
+      title: "Seguridad Básica en Internet",
+      description: "Conceptos fundamentales para navegar de forma segura",
       icon: Shield,
       progress: 0,
     },
     {
       id: "mobile-security",
-      title: "Seguridad en el Móvil",
-      description: "Protege tu teléfono y aplicaciones",
+      title: "Uso Seguro del Teléfono Móvil",
+      description: "Aprende a usar tu smartphone de manera segura",
       icon: Smartphone,
       progress: 0,
     },
     {
       id: "wifi-security",
-      title: "Seguridad en Redes WiFi",
-      description: "Aprende a usar redes WiFi de forma segura",
+      title: "Conexiones WiFi Seguras",
+      description: "Cómo conectarte de forma segura a redes WiFi",
       icon: Wifi,
       progress: 0,
     },
     {
       id: "banking-security",
       title: "Banca en Línea Segura",
-      description: "Realiza operaciones bancarias con seguridad",
+      description: "Realiza operaciones bancarias de forma segura",
       icon: CreditCard,
       progress: 0,
     },
+    {
+      id: "password-management",
+      title: "Gestión de Contraseñas",
+      description: "Crea y gestiona contraseñas seguras",
+      icon: Key,
+      progress: 0,
+    },
+    {
+      id: "email-security",
+      title: "Seguridad en el Correo Electrónico",
+      description: "Identifica y evita correos fraudulentos",
+      icon: MessageCircle,
+      progress: 0,
+    },
+    {
+      id: "social-networks",
+      title: "Redes Sociales para Mayores",
+      description: "Usa las redes sociales de forma segura",
+      icon: Share2,
+      progress: 0,
+    },
+    {
+      id: "online-shopping",
+      title: "Compras en Línea Seguras",
+      description: "Aprende a comprar de forma segura por internet",
+      icon: Globe,
+      progress: 0,
+    },
+    {
+      id: "digital-services",
+      title: "Servicios Digitales",
+      description: "Usa servicios gubernamentales y médicos en línea",
+      icon: User,
+      progress: 0,
+    },
+    {
+      id: "scam-prevention",
+      title: "Prevención de Estafas",
+      description: "Identifica y evita estafas comunes en línea",
+      icon: AlertTriangle,
+      progress: 0,
+    }
   ];
 
   const getLessons = () => {
