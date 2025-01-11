@@ -11,6 +11,7 @@ interface Question {
   feedback: {
     correct: string;
     incorrect: string;
+    funFact: string;
   };
 }
 
@@ -31,7 +32,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
-        incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas.",
+        funFact: "¿Sabías que? El primer antivirus fue creado en 1987 para combatir el virus 'Brain', que afectaba a las computadoras IBM PC."
       }
     }
   ],
@@ -47,7 +49,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Es importante proteger su teléfono con contraseña y ser cuidadoso con las apps que instala.",
-        incorrect: "Debe proteger su teléfono con contraseña y solo instalar apps de fuentes confiables."
+        incorrect: "Debe proteger su teléfono con contraseña y solo instalar apps de fuentes confiables.",
+        funFact: "¿Sabías que? El 90% de los ataques a dispositivos móviles se pueden prevenir con una buena contraseña."
       }
     }
   ],
@@ -63,7 +66,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Las redes seguras muestran un candado y es mejor usar redes conocidas.",
-        incorrect: "Las redes WiFi seguras muestran un candado y es más seguro usar redes conocidas y confiables."
+        incorrect: "Las redes WiFi seguras muestran un candado y es más seguro usar redes conocidas y confiables.",
+        funFact: "¿Sabías que? Conectarse a redes WiFi públicas puede exponer tus datos personales a los hackers."
       }
     }
   ],
@@ -79,7 +83,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Bien! Es importante usar conexiones seguras y verificar que esté en el sitio oficial del banco.",
-        incorrect: "Para usar la banca en línea de forma segura, use conexiones seguras y verifique que esté en el sitio oficial."
+        incorrect: "Para usar la banca en línea de forma segura, use conexiones seguras y verifique que esté en el sitio oficial.",
+        funFact: "¿Sabías que? El phishing es una de las técnicas más comunes para robar información bancaria en línea."
       }
     }
   ],
@@ -95,7 +100,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Es importante usar contraseñas únicas y complejas para cada servicio.",
-        incorrect: "Las contraseñas seguras deben ser únicas para cada servicio y combinar letras, números y símbolos."
+        incorrect: "Las contraseñas seguras deben ser únicas para cada servicio y combinar letras, números y símbolos.",
+        funFact: "¿Sabías que? El 81% de las violaciones de datos se deben a contraseñas débiles o robadas."
       }
     }
   ],
@@ -111,7 +117,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Debe verificar el remitente y ser cauteloso con enlaces y archivos sospechosos.",
-        incorrect: "Los correos fraudulentos suelen tener remitentes sospechosos, errores y enlaces maliciosos."
+        incorrect: "Los correos fraudulentos suelen tener remitentes sospechosos, errores y enlaces maliciosos.",
+        funFact: "¿Sabías que? El 90% de los ataques de malware comienzan con un correo electrónico de phishing."
       }
     }
   ],
@@ -127,7 +134,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Es importante mantener su perfil privado y solo conectar con personas conocidas.",
-        incorrect: "En redes sociales, use configuración privada y solo acepte conexiones de personas que conoce."
+        incorrect: "En redes sociales, use configuración privada y solo acepte conexiones de personas que conoce.",
+        funFact: "¿Sabías que? Más del 50% de los jóvenes no revisan sus configuraciones de privacidad en redes sociales."
       }
     }
   ],
@@ -143,7 +151,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Bien! Debe usar sitios seguros y verificados para comprar en línea.",
-        incorrect: "Para comprar de forma segura, use sitios web verificados y con buena reputación."
+        incorrect: "Para comprar de forma segura, use sitios web verificados y con buena reputación.",
+        funFact: "¿Sabías que? El 70% de los consumidores han sido víctimas de fraudes en línea al menos una vez."
       }
     }
   ],
@@ -159,7 +168,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Debe usar solo sitios oficiales y conexiones seguras.",
-        incorrect: "Para trámites gubernamentales en línea, use solo sitios oficiales y conexiones seguras."
+        incorrect: "Para trámites gubernamentales en línea, use solo sitios oficiales y conexiones seguras.",
+        funFact: "¿Sabías que? Los sitios web gubernamentales suelen tener medidas de seguridad más estrictas."
       }
     }
   ],
@@ -175,7 +185,8 @@ const seniorQuestions: QuestionSet = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Es importante ser escéptico y verificar ofertas que parecen demasiado buenas.",
-        incorrect: "Para evitar estafas, sea escéptico y verifique ofertas que parecen demasiado buenas para ser verdad."
+        incorrect: "Para evitar estafas, sea escéptico y verifique ofertas que parecen demasiado buenas para ser verdad.",
+        funFact: "¿Sabías que? Las estafas en línea han aumentado un 300% en los últimos años."
       }
     }
   ]
@@ -196,13 +207,11 @@ const Lesson = () => {
 
   useEffect(() => {
     if (mode === "sequential") {
-      // Combinar todas las preguntas de todas las lecciones
       const questions = ageGroup === "seniors" 
         ? Object.values(seniorQuestions).flat()
         : Object.values(youthQuestions).flat();
       setAllQuestions(questions);
     } else {
-      // Modo normal: solo preguntas de la lección actual
       const questions = ageGroup === "seniors" 
         ? (lessonId && seniorQuestions[lessonId] ? seniorQuestions[lessonId] : [])
         : (lessonId && youthQuestions[lessonId as keyof typeof youthQuestions] || []);
@@ -221,19 +230,24 @@ const Lesson = () => {
     const isCorrect = selectedIndex === allQuestions[currentQuestion].correctAnswer;
     const feedback = allQuestions[currentQuestion].feedback;
     
-    if (isCorrect) {
+    // Primer toast con el feedback de la respuesta
+    toast({
+      title: isCorrect ? "¡Correcto! 🎉" : "Incorrecto ❌",
+      description: isCorrect ? feedback.correct : feedback.incorrect,
+      variant: isCorrect ? "default" : "destructive",
+    });
+
+    // Segundo toast con el dato curioso (después de un pequeño delay)
+    setTimeout(() => {
       toast({
-        title: "¡Correcto! 🎉",
-        description: feedback.correct,
+        title: "¿Sabías que...? 🤔",
+        description: feedback.funFact,
         variant: "default",
       });
+    }, 1000);
+
+    if (isCorrect) {
       setScore(score + 1);
-    } else {
-      toast({
-        title: "Incorrecto ❌",
-        description: feedback.incorrect,
-        variant: "destructive",
-      });
     }
 
     if (currentQuestion < allQuestions.length - 1) {

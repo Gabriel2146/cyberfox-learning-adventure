@@ -11,7 +11,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Nunca debes compartir información privada como tu dirección o teléfono en redes sociales.",
-        incorrect: "Debes proteger tu información personal. Tu dirección y número de teléfono son datos privados que no debes compartir en redes sociales."
+        incorrect: "Debes proteger tu información personal. Tu dirección y número de teléfono son datos privados que no debes compartir en redes sociales.",
+        funFact: "¿Sabías que? Más del 70% de los jóvenes comparten información personal en redes sociales sin darse cuenta de los riesgos."
       }
     }
   ],
@@ -27,7 +28,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Una contraseña segura debe combinar diferentes tipos de caracteres.",
-        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección."
+        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección.",
+        funFact: "¿Sabías que? El 81% de las violaciones de datos son causadas por contraseñas débiles."
       }
     }
   ],
@@ -43,7 +45,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Es importante tomar acción y buscar ayuda cuando alguien te acosa en línea.",
-        incorrect: "La mejor manera de manejar el acoso en línea es reportar al acosador, bloquearlo y hablar con un adulto de confianza."
+        incorrect: "La mejor manera de manejar el acoso en línea es reportar al acosador, bloquearlo y hablar con un adulto de confianza.",
+        funFact: "¿Sabías que? El 59% de los jóvenes han sido acosados en línea, y muchos no lo reportan."
       }
     }
   ],
@@ -59,7 +62,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! El ciberacoso es una forma de acoso que ocurre a través de medios digitales.",
-        incorrect: "El ciberacoso es cuando alguien usa medios digitales para acosar, intimidar o molestar a otros."
+        incorrect: "El ciberacoso es cuando alguien usa medios digitales para acosar, intimidar o molestar a otros.",
+        funFact: "¿Sabías que? El 34% de los estudiantes han experimentado ciberacoso en algún momento."
       }
     }
   ],
@@ -75,7 +79,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Tu huella digital es toda la información que dejas al usar internet.",
-        incorrect: "La huella digital es el rastro de información que dejas cuando usas internet, incluyendo publicaciones, comentarios y likes."
+        incorrect: "La huella digital es el rastro de información que dejas cuando usas internet, incluyendo publicaciones, comentarios y likes.",
+        funFact: "¿Sabías que? El 90% de los datos en el mundo se han creado en los últimos dos años."
       }
     }
   ],
@@ -91,7 +96,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Bien hecho! Es importante verificar las fuentes y contrastar la información.",
-        incorrect: "Para identificar información falsa, debes verificar las fuentes y contrastar la información con sitios confiables."
+        incorrect: "Para identificar información falsa, debes verificar las fuentes y contrastar la información con sitios confiables.",
+        funFact: "¿Sabías que? El 64% de los adultos no pueden distinguir entre noticias falsas y reales."
       }
     }
   ],
@@ -107,7 +113,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Es importante ser cauteloso y proteger tu información personal.",
-        incorrect: "Al hacer amigos en línea, debes ser cauteloso y nunca compartir información personal."
+        incorrect: "Al hacer amigos en línea, debes ser cauteloso y nunca compartir información personal.",
+        funFact: "¿Sabías que? El 50% de los jóvenes han compartido información personal con extraños en línea."
       }
     }
   ],
@@ -123,7 +130,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Exacto! Es más seguro usar un nickname y mantener tu información personal privada.",
-        incorrect: "Al jugar en línea, es más seguro usar un nickname y nunca compartir información personal."
+        incorrect: "Al jugar en línea, es más seguro usar un nickname y nunca compartir información personal.",
+        funFact: "¿Sabías que? El 70% de los jugadores en línea han sido contactados por extraños."
       }
     }
   ],
@@ -139,7 +147,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Correcto! Es importante pensar en el impacto y la privacidad antes de publicar.",
-        incorrect: "Antes de publicar contenido, debes considerar su impacto y configurar adecuadamente la privacidad."
+        incorrect: "Antes de publicar contenido, debes considerar su impacto y configurar adecuadamente la privacidad.",
+        funFact: "¿Sabías que? Una vez que publicas algo en línea, puede ser difícil eliminarlo por completo."
       }
     }
   ],
@@ -155,7 +164,8 @@ export const youthQuestions = {
       correctAnswer: 1,
       feedback: {
         correct: "¡Bien! Solo debes compartir contenido respetuoso y apropiado para tu edad.",
-        incorrect: "Es importante compartir solo contenido respetuoso y apropiado para tu edad, respetando la privacidad de otros."
+        incorrect: "Es importante compartir solo contenido respetuoso y apropiado para tu edad, respetando la privacidad de otros.",
+        funFact: "¿Sabías que? Compartir contenido inapropiado puede tener consecuencias legales."
       }
     }
   ]
