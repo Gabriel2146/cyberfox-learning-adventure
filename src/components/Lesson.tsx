@@ -33,179 +33,149 @@ const seniorQuestions: QuestionSet = {
         correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
         incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
       }
-    },
-    {
-      question: "¿Qué debe hacer si recibe un correo electrónico sospechoso?",
-      options: [
-        "Abrirlo inmediatamente",
-        "No abrirlo y eliminarlo",
-        "Reenviarlo a amigos",
-        "Hacer clic en todos los enlaces",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! Es mejor no abrir correos sospechosos y eliminarlos directamente.",
-        incorrect: "Por seguridad, es mejor no abrir correos sospechosos y eliminarlos directamente."
-      }
-    },
-    {
-      question: "¿Cuál es una buena práctica para las contraseñas?",
-      options: [
-        "Usar la misma para todo",
-        "Usar combinaciones de letras, números y símbolos",
-        "Compartirlas con amigos",
-        "Escribirlas en un papel",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Las contraseñas seguras deben combinar letras, números y símbolos.",
-        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección."
-      }
-    },
-    {
-      question: "¿Qué hacer si alguien solicita sus datos bancarios por teléfono?",
-      options: [
-        "Darlos inmediatamente",
-        "Nunca compartirlos y contactar al banco directamente",
-        "Compartirlos si parece urgente",
-        "Pedir consejo a un amigo",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Bien hecho! Nunca comparta datos bancarios por teléfono y siempre contacte directamente a su banco.",
-        incorrect: "Por seguridad, nunca comparta datos bancarios por teléfono. Contacte directamente a su banco."
-      }
-    },
-    {
-      question: "¿Cómo proteger sus documentos importantes en la computadora?",
-      options: [
-        "No hacer nada especial",
-        "Crear copias de seguridad y usar contraseñas",
-        "Compartirlos por email",
-        "Dejarlos sin protección",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! Es importante tener copias de seguridad y proteger sus documentos con contraseñas.",
-        incorrect: "Para proteger sus documentos, es importante crear copias de seguridad y usar contraseñas."
-      }
-    },
-    {
-      question: "¿Qué es el phishing?",
-      options: [
-        "Un deporte",
-        "Un intento de robo de información personal",
-        "Una red social",
-        "Un tipo de correo normal",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! El phishing es un intento de robar su información personal haciéndose pasar por entidades confiables.",
-        incorrect: "El phishing es cuando alguien intenta robar su información personal haciéndose pasar por entidades confiables."
-      }
-    },
-    {
-      question: "¿Qué hacer si olvida su contraseña?",
-      options: [
-        "Crear una cuenta nueva",
-        "Usar la opción de recuperación oficial",
-        "Pedirle a un amigo",
-        "No hacer nada",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Bien! Siempre use el proceso oficial de recuperación de contraseña.",
-        incorrect: "Use siempre el proceso oficial de recuperación de contraseña del servicio."
-      }
-    },
-    {
-      question: "¿Cómo reconocer un sitio web seguro?",
-      options: [
-        "Por sus colores",
-        "Por el candado de seguridad y https",
-        "Por su publicidad",
-        "Por sus ofertas",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! El candado y https indican que un sitio web es seguro.",
-        incorrect: "Los sitios web seguros muestran un candado y usan https en su dirección."
-      }
-    },
-    {
-      question: "¿Qué hacer si una página pide actualizar su software?",
-      options: [
-        "Actualizar inmediatamente",
-        "Verificar que sea legítimo y actualizar desde fuentes oficiales",
-        "Ignorar siempre",
-        "Preguntar en redes sociales",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! Siempre verifique y actualice desde fuentes oficiales.",
-        incorrect: "Es importante verificar y solo actualizar software desde fuentes oficiales."
-      }
-    },
-    {
-      question: "¿Cómo proteger su red WiFi doméstica?",
-      options: [
-        "Dejarla abierta",
-        "Usar contraseña fuerte y cambiarla regularmente",
-        "Compartir la contraseña",
-        "No usar contraseña",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Una contraseña fuerte y cambiarla regularmente protege su red WiFi.",
-        incorrect: "Para proteger su red WiFi, use una contraseña fuerte y cámbiela regularmente."
-      }
     }
   ],
   "mobile-security": [
     {
-      question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+      question: "¿Qué precauciones debe tomar al usar su teléfono móvil?",
       options: [
-        "Un programa para jugar",
-        "Un programa que protege contra software malicioso",
-        "Una aplicación de redes sociales",
-        "Un tipo de virus",
+        "No usar contraseña",
+        "Usar contraseña y no instalar apps de fuentes desconocidas",
+        "Compartir su ubicación siempre",
+        "Dar acceso a todas las apps",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
-        incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        correct: "¡Exacto! Es importante proteger su teléfono con contraseña y ser cuidadoso con las apps que instala.",
+        incorrect: "Debe proteger su teléfono con contraseña y solo instalar apps de fuentes confiables."
       }
     }
   ],
   "wifi-security": [
     {
-      question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+      question: "¿Cómo identificar una red WiFi segura?",
       options: [
-        "Un programa para jugar",
-        "Un programa que protege contra software malicioso",
-        "Una aplicación de redes sociales",
-        "Un tipo de virus",
+        "Todas las redes son seguras",
+        "Buscar el candado de seguridad y usar redes conocidas",
+        "Conectarse a cualquier red gratis",
+        "Compartir la contraseña con todos",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
-        incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        correct: "¡Correcto! Las redes seguras muestran un candado y es mejor usar redes conocidas.",
+        incorrect: "Las redes WiFi seguras muestran un candado y es más seguro usar redes conocidas y confiables."
       }
     }
   ],
   "banking-security": [
     {
-      question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+      question: "¿Qué medidas debe tomar al usar banca en línea?",
       options: [
-        "Un programa para jugar",
-        "Un programa que protege contra software malicioso",
-        "Una aplicación de redes sociales",
-        "Un tipo de virus",
+        "Usar WiFi público",
+        "Usar conexiones seguras y verificar el sitio web oficial",
+        "Compartir credenciales",
+        "Guardar contraseñas en el navegador",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Un antivirus es esencial para proteger su computadora contra programas maliciosos.",
-        incorrect: "Un antivirus es un programa que protege su computadora contra software malicioso, virus y otras amenazas."
+        correct: "¡Bien! Es importante usar conexiones seguras y verificar que esté en el sitio oficial del banco.",
+        incorrect: "Para usar la banca en línea de forma segura, use conexiones seguras y verifique que esté en el sitio oficial."
+      }
+    }
+  ],
+  "password-management": [
+    {
+      question: "¿Cómo crear y mantener contraseñas seguras?",
+      options: [
+        "Usar la misma para todo",
+        "Usar contraseñas únicas y complejas para cada servicio",
+        "Usar fechas de nacimiento",
+        "Compartirlas con amigos",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Es importante usar contraseñas únicas y complejas para cada servicio.",
+        incorrect: "Las contraseñas seguras deben ser únicas para cada servicio y combinar letras, números y símbolos."
+      }
+    }
+  ],
+  "email-security": [
+    {
+      question: "¿Cómo identificar un correo electrónico fraudulento?",
+      options: [
+        "Abrir todos los enlaces",
+        "Verificar remitente, errores y enlaces sospechosos",
+        "Descargar todos los archivos",
+        "Responder inmediatamente",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Exacto! Debe verificar el remitente y ser cauteloso con enlaces y archivos sospechosos.",
+        incorrect: "Los correos fraudulentos suelen tener remitentes sospechosos, errores y enlaces maliciosos."
+      }
+    }
+  ],
+  "social-networks": [
+    {
+      question: "¿Qué configuración de privacidad debe usar en redes sociales?",
+      options: [
+        "Perfil público",
+        "Configuración privada y solo aceptar conocidos",
+        "Aceptar todas las solicitudes",
+        "No usar configuración",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Es importante mantener su perfil privado y solo conectar con personas conocidas.",
+        incorrect: "En redes sociales, use configuración privada y solo acepte conexiones de personas que conoce."
+      }
+    }
+  ],
+  "online-shopping": [
+    {
+      question: "¿Cómo realizar compras seguras en internet?",
+      options: [
+        "Usar cualquier sitio",
+        "Usar sitios seguros y verificados",
+        "Compartir datos bancarios",
+        "Ignorar las reseñas",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Bien! Debe usar sitios seguros y verificados para comprar en línea.",
+        incorrect: "Para comprar de forma segura, use sitios web verificados y con buena reputación."
+      }
+    }
+  ],
+  "digital-services": [
+    {
+      question: "¿Cómo usar servicios digitales gubernamentales de forma segura?",
+      options: [
+        "Usar cualquier sitio",
+        "Verificar sitios oficiales y usar conexiones seguras",
+        "Compartir credenciales",
+        "Ignorar la seguridad",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Debe usar solo sitios oficiales y conexiones seguras.",
+        incorrect: "Para trámites gubernamentales en línea, use solo sitios oficiales y conexiones seguras."
+      }
+    }
+  ],
+  "scam-prevention": [
+    {
+      question: "¿Cómo identificar y evitar estafas comunes en línea?",
+      options: [
+        "Confiar en todos",
+        "Ser escéptico y verificar ofertas sospechosas",
+        "Compartir datos personales",
+        "Ignorar las advertencias",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Exacto! Es importante ser escéptico y verificar ofertas que parecen demasiado buenas.",
+        incorrect: "Para evitar estafas, sea escéptico y verifique ofertas que parecen demasiado buenas para ser verdad."
       }
     }
   ]

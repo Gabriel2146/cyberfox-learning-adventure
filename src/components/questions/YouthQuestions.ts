@@ -1,161 +1,161 @@
 export const youthQuestions = {
   "personal-info": [
     {
-      question: "¿Qué información personal no debes compartir en línea?",
+      question: "¿Qué información personal no debes compartir en redes sociales?",
       options: [
-        "Tu nombre",
+        "Tu película favorita",
         "Tu dirección y número de teléfono",
-        "Tu edad",
+        "Tus hobbies",
         "Tu color favorito",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Nunca debes compartir información sensible como tu dirección o número de teléfono.",
-        incorrect: "Es importante proteger tu información personal y no compartir datos sensibles en línea."
+        correct: "¡Correcto! Nunca debes compartir información privada como tu dirección o teléfono en redes sociales.",
+        incorrect: "Debes proteger tu información personal. Tu dirección y número de teléfono son datos privados que no debes compartir en redes sociales."
       }
     }
   ],
   "passwords": [
     {
-      question: "¿Cuál es una buena práctica para crear contraseñas?",
+      question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       options: [
         "Usar la misma contraseña para todo",
-        "Usar una combinación de letras, números y símbolos",
-        "Escribirla en un papel",
-        "Compartirla con amigos",
+        "Combinar letras, números y símbolos",
+        "Usar tu fecha de nacimiento",
+        "Usar palabras del diccionario",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Exacto! Las contraseñas seguras deben ser únicas y complejas.",
-        incorrect: "Las contraseñas deben ser fuertes y únicas para cada cuenta."
+        correct: "¡Exacto! Una contraseña segura debe combinar diferentes tipos de caracteres.",
+        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección."
       }
     }
   ],
   "online-safety": [
     {
-      question: "¿Qué debes hacer si recibes un mensaje de un extraño?",
+      question: "¿Qué debes hacer si alguien te acosa en línea?",
       options: [
-        "Responder y preguntar quién es",
-        "Ignorarlo y no responder",
-        "Compartirlo con tus amigos",
-        "Contarles a tus padres",
+        "Ignorarlo y esperar que pare",
+        "Reportar, bloquear y avisar a un adulto de confianza",
+        "Responder de la misma manera",
+        "Borrar tu cuenta",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Es mejor ignorar y no interactuar con extraños en línea.",
-        incorrect: "Siempre es mejor no responder a mensajes de extraños."
-      }
-    }
-  ],
-  "scams": [
-    {
-      question: "¿Cómo puedes identificar una estafa en línea?",
-      options: [
-        "Prometen dinero fácil",
-        "Tienen errores de ortografía",
-        "Piden información personal",
-        "Todas las anteriores",
-      ],
-      correctAnswer: 3,
-      feedback: {
-        correct: "¡Bien hecho! Todas estas son señales de una posible estafa.",
-        incorrect: "Las estafas suelen tener características comunes que debes aprender a identificar."
-      }
-    }
-  ],
-  "digital-footprint": [
-    {
-      question: "¿Qué es una huella digital?",
-      options: [
-        "Las marcas que dejas al caminar",
-        "La información que dejas en línea",
-        "Un tipo de virus",
-        "Un programa de computadora",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Correcto! Tu huella digital es la información que dejas en internet.",
-        incorrect: "Es importante ser consciente de la información que compartes en línea."
-      }
-    }
-  ],
-  "secure-browsing": [
-    {
-      question: "¿Qué debes hacer para navegar de forma segura?",
-      options: [
-        "Usar redes WiFi públicas sin protección",
-        "Instalar un antivirus y usar contraseñas seguras",
-        "No usar contraseñas",
-        "Compartir tu contraseña con amigos",
-      ],
-      correctAnswer: 1,
-      feedback: {
-        correct: "¡Exacto! Mantener tu dispositivo protegido es clave para una navegación segura.",
-        incorrect: "Siempre debes proteger tu dispositivo y tus contraseñas."
+        correct: "¡Correcto! Es importante tomar acción y buscar ayuda cuando alguien te acosa en línea.",
+        incorrect: "La mejor manera de manejar el acoso en línea es reportar al acosador, bloquearlo y hablar con un adulto de confianza."
       }
     }
   ],
   "cyberbullying": [
     {
-      question: "¿Qué debes hacer si alguien te molesta en internet?",
+      question: "¿Qué es el ciberacoso?",
       options: [
-        "Responder de la misma manera",
-        "Avisar a tus padres o profesores y bloquear a esa persona",
-        "Ignorarlo y seguir usando internet",
-        "Dejar de usar internet",
+        "Un juego en línea",
+        "Acosar o intimidar a alguien usando medios digitales",
+        "Una red social",
+        "Un tipo de virus",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Siempre debes avisar a un adulto de confianza y bloquear a quien te molesta.",
-        incorrect: "Es importante avisar a un adulto de confianza y bloquear a las personas que te molestan en internet."
+        correct: "¡Correcto! El ciberacoso es una forma de acoso que ocurre a través de medios digitales.",
+        incorrect: "El ciberacoso es cuando alguien usa medios digitales para acosar, intimidar o molestar a otros."
       }
     }
   ],
-  "safe-downloads": [
+  "digital-footprint": [
     {
-      question: "¿Qué debes hacer antes de descargar un juego o aplicación?",
+      question: "¿Qué es la huella digital?",
       options: [
-        "Descargarlo inmediatamente",
-        "Pedir permiso a tus padres y verificar que sea seguro",
-        "Compartirlo con amigos",
-        "Descargar todo lo que encuentres",
+        "Una app de fotografía",
+        "El rastro de información que dejas en internet",
+        "Un tipo de contraseña",
+        "Un dispositivo electrónico",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! Siempre pide permiso y verifica que sea seguro antes de descargar.",
-        incorrect: "Antes de descargar algo, pide permiso a tus padres y asegúrate de que sea seguro."
+        correct: "¡Exacto! Tu huella digital es toda la información que dejas al usar internet.",
+        incorrect: "La huella digital es el rastro de información que dejas cuando usas internet, incluyendo publicaciones, comentarios y likes."
       }
     }
   ],
-  "social-media": [
+  "critical-thinking": [
     {
-      question: "¿Qué configuración debes usar en tus redes sociales?",
+      question: "¿Cómo identificar información falsa en internet?",
       options: [
-        "Perfil público para todos",
-        "Configuración privada y solo aceptar amigos que conoces",
+        "Creer todo lo que veo",
+        "Verificar fuentes y contrastar información",
+        "Compartir sin leer",
+        "Ignorar todas las noticias",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Bien hecho! Es importante verificar las fuentes y contrastar la información.",
+        incorrect: "Para identificar información falsa, debes verificar las fuentes y contrastar la información con sitios confiables."
+      }
+    }
+  ],
+  "digital-relationships": [
+    {
+      question: "¿Qué precauciones debes tomar al hacer amigos en línea?",
+      options: [
+        "Compartir toda tu información",
+        "No compartir información personal y ser cauteloso",
+        "Encontrarse en persona inmediatamente",
+        "Ignorar los consejos de seguridad",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Correcto! Es importante ser cauteloso y proteger tu información personal.",
+        incorrect: "Al hacer amigos en línea, debes ser cauteloso y nunca compartir información personal."
+      }
+    }
+  ],
+  "gaming-safety": [
+    {
+      question: "¿Qué medidas de seguridad debes tomar al jugar en línea?",
+      options: [
+        "Usar tu nombre real",
+        "Usar un nickname y no compartir datos personales",
+        "Compartir tu ubicación",
         "Aceptar todas las solicitudes de amistad",
-        "No usar configuración de privacidad",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Es importante mantener tus redes sociales privadas y solo aceptar amigos que conoces.",
-        incorrect: "Debes mantener tus redes sociales privadas y solo aceptar solicitudes de personas que conoces en la vida real."
+        correct: "¡Exacto! Es más seguro usar un nickname y mantener tu información personal privada.",
+        incorrect: "Al jugar en línea, es más seguro usar un nickname y nunca compartir información personal."
       }
     }
   ],
-  "privacy-settings": [
+  "content-creation": [
     {
-      question: "¿Por qué es importante revisar la configuración de privacidad?",
+      question: "¿Qué debes considerar antes de publicar contenido en línea?",
       options: [
-        "No es importante",
-        "Para controlar quién puede ver tu información",
-        "Solo si usas redes sociales",
-        "Para tener más amigos",
+        "Publicar sin pensar",
+        "El impacto y la privacidad del contenido",
+        "Ignorar la configuración de privacidad",
+        "Compartir todo lo que ves",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! La configuración de privacidad te ayuda a controlar quién puede ver tu información.",
-        incorrect: "La configuración de privacidad es importante porque te permite controlar quién puede ver tu información en internet."
+        correct: "¡Correcto! Es importante pensar en el impacto y la privacidad antes de publicar.",
+        incorrect: "Antes de publicar contenido, debes considerar su impacto y configurar adecuadamente la privacidad."
+      }
+    }
+  ],
+  "sharing-online": [
+    {
+      question: "¿Qué tipo de contenido es apropiado compartir en línea?",
+      options: [
+        "Información privada",
+        "Contenido respetuoso y apropiado para tu edad",
+        "Fotos de otros sin permiso",
+        "Datos personales de amigos",
+      ],
+      correctAnswer: 1,
+      feedback: {
+        correct: "¡Bien! Solo debes compartir contenido respetuoso y apropiado para tu edad.",
+        incorrect: "Es importante compartir solo contenido respetuoso y apropiado para tu edad, respetando la privacidad de otros."
       }
     }
   ]
