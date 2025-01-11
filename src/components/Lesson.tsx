@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Shield, Lock, AlertTriangle, Wifi, CreditCard, KeyRound, Mail, Users, ShoppingCart, FileCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { youthQuestions } from "./questions/YouthQuestions";
 
 interface Question {
   question: string;
+  icon?: string;
+  image?: string;
   options: string[];
   correctAnswer: number;
   feedback: {
@@ -19,10 +21,28 @@ interface QuestionSet {
   [key: string]: Question[];
 }
 
+const getIconComponent = (iconName: string) => {
+  const icons = {
+    Shield,
+    Lock,
+    AlertTriangle,
+    Wifi,
+    CreditCard,
+    KeyRound,
+    Mail,
+    Users,
+    ShoppingCart,
+    FileCheck
+  };
+  return icons[iconName as keyof typeof icons];
+};
+
 const seniorQuestions: QuestionSet = {
   "basic-security": [
     {
       question: "¿Qué es un antivirus y por qué es importante tenerlo?",
+      icon: "Shield",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       options: [
         "Un programa para jugar",
         "Un programa que protege contra software malicioso",
@@ -230,14 +250,12 @@ const Lesson = () => {
     const isCorrect = selectedIndex === allQuestions[currentQuestion].correctAnswer;
     const feedback = allQuestions[currentQuestion].feedback;
     
-    // Primer toast con el feedback de la respuesta
     toast({
       title: isCorrect ? "¡Correcto! 🎉" : "Incorrecto ❌",
       description: isCorrect ? feedback.correct : feedback.incorrect,
       variant: isCorrect ? "default" : "destructive",
     });
 
-    // Segundo toast con el dato curioso (después de un pequeño delay)
     setTimeout(() => {
       toast({
         title: "¿Sabías que...? 🤔",
@@ -258,6 +276,8 @@ const Lesson = () => {
   };
 
   const progress = ((currentQuestion + 1) / allQuestions.length) * 100;
+  const currentQuestionData = allQuestions[currentQuestion];
+  const IconComponent = currentQuestionData.icon ? getIconComponent(currentQuestionData.icon) : null;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-dark via-dark/90 to-dark/80 p-6">
@@ -280,12 +300,25 @@ const Lesson = () => {
         </div>
 
         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 shadow-lg animate-scale-in border border-white/20">
-          <h2 className="text-2xl font-bold mb-6 text-white">
-            {allQuestions[currentQuestion].question}
-          </h2>
+          <div className="flex items-center gap-4 mb-6">
+            {IconComponent && <IconComponent className="w-8 h-8 text-primary" />}
+            <h2 className="text-2xl font-bold text-white">
+              {currentQuestionData.question}
+            </h2>
+          </div>
+
+          {currentQuestionData.image && (
+            <div className="mb-6 rounded-lg overflow-hidden">
+              <img 
+                src={currentQuestionData.image} 
+                alt="Imagen ilustrativa" 
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          )}
 
           <div className="grid gap-4">
-            {allQuestions[currentQuestion].options.map((option, index) => (
+            {currentQuestionData.options.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleAnswer(index)}

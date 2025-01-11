@@ -2,6 +2,8 @@ export const youthQuestions = {
   "personal-info": [
     {
       question: "¿Qué información personal no debes compartir en redes sociales?",
+      icon: "Lock",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
       options: [
         "Tu película favorita",
         "Tu dirección y número de teléfono",
@@ -19,6 +21,8 @@ export const youthQuestions = {
   "passwords": [
     {
       question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
+      icon: "KeyRound",
+      image: "https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c",
       options: [
         "Usar la misma contraseña para todo",
         "Combinar letras, números y símbolos",
@@ -36,6 +40,8 @@ export const youthQuestions = {
   "online-safety": [
     {
       question: "¿Qué debes hacer si alguien te acosa en línea?",
+      icon: "AlertTriangle",
+      image: "https://images.unsplash.com/photo-1593642632823-8f785b8c8c8c",
       options: [
         "Ignorarlo y esperar que pare",
         "Reportar, bloquear y avisar a un adulto de confianza",
@@ -53,6 +59,8 @@ export const youthQuestions = {
   "cyberbullying": [
     {
       question: "¿Qué es el ciberacoso?",
+      icon: "Users",
+      image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
       options: [
         "Un juego en línea",
         "Acosar o intimidar a alguien usando medios digitales",
@@ -70,6 +78,8 @@ export const youthQuestions = {
   "digital-footprint": [
     {
       question: "¿Qué es la huella digital?",
+      icon: "FileCheck",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Una app de fotografía",
         "El rastro de información que dejas en internet",
@@ -87,6 +97,8 @@ export const youthQuestions = {
   "critical-thinking": [
     {
       question: "¿Cómo identificar información falsa en internet?",
+      icon: "AlertTriangle",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Creer todo lo que veo",
         "Verificar fuentes y contrastar información",
@@ -104,6 +116,8 @@ export const youthQuestions = {
   "digital-relationships": [
     {
       question: "¿Qué precauciones debes tomar al hacer amigos en línea?",
+      icon: "Users",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Compartir toda tu información",
         "No compartir información personal y ser cauteloso",
@@ -121,6 +135,8 @@ export const youthQuestions = {
   "gaming-safety": [
     {
       question: "¿Qué medidas de seguridad debes tomar al jugar en línea?",
+      icon: "Shield",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Usar tu nombre real",
         "Usar un nickname y no compartir datos personales",
@@ -138,6 +154,8 @@ export const youthQuestions = {
   "content-creation": [
     {
       question: "¿Qué debes considerar antes de publicar contenido en línea?",
+      icon: "FileCheck",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Publicar sin pensar",
         "El impacto y la privacidad del contenido",
@@ -155,6 +173,8 @@ export const youthQuestions = {
   "sharing-online": [
     {
       question: "¿Qué tipo de contenido es apropiado compartir en línea?",
+      icon: "FileCheck",
+      image: "https://images.unsplash.com/photo-1517436073-00f8b8b8b8b8",
       options: [
         "Información privada",
         "Contenido respetuoso y apropiado para tu edad",
