@@ -3,8 +3,7 @@ export const youthQuestions = {
     {
       question: "¿Qué información personal no debes compartir en redes sociales?",
       icon: "Lock",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      video: "https://www.youtube.com/embed/aMuBjYZpxQk?si=_ZhvxwFxFqwh9KL8",
+      image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtM2JyY3BxbXF1NnJ3OXh6YnB6bGx6Ym16aHd0ZHB4OWhtd2lqbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjRrfIPjeiVyM/giphy.gif",
       options: [
         "Tu película favorita",
         "Tu dirección y número de teléfono",
@@ -23,7 +22,7 @@ export const youthQuestions = {
     {
       question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       icon: "KeyRound",
-      image: "https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c",
+      image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzY5Y3E0ZWN0MWF6ZmQ2Y2t0ZDdwbXgydWY4NmR6ZWx1ZXBxbWR6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UVqjochYRlbMQ/giphy.gif",
       options: [
         "Usar la misma contraseña para todo",
         "Combinar letras, números y símbolos",
