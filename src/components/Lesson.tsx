@@ -8,6 +8,7 @@ interface Question {
   question: string;
   icon?: string;
   image?: string;
+  video?: string;
   options: string[];
   correctAnswer: number;
   feedback: {
@@ -307,7 +308,18 @@ const Lesson = () => {
             </h2>
           </div>
 
-          {currentQuestionData.image && (
+          {currentQuestionData.video && (
+            <div className="mb-6 rounded-lg overflow-hidden aspect-video">
+              <iframe
+                src={currentQuestionData.video}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
+
+          {currentQuestionData.image && !currentQuestionData.video && (
             <div className="mb-6 rounded-lg overflow-hidden">
               <img 
                 src={currentQuestionData.image} 

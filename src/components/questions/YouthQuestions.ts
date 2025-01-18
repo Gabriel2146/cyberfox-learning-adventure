@@ -4,6 +4,7 @@ export const youthQuestions = {
       question: "¿Qué información personal no debes compartir en redes sociales?",
       icon: "Lock",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       options: [
         "Tu película favorita",
         "Tu dirección y número de teléfono",
