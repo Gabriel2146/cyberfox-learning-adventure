@@ -22,7 +22,7 @@ export const youthQuestions = {
     {
       question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       icon: "KeyRound",
-      image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzY5Y3E0ZWN0MWF6ZmQ2Y2t0ZDdwbXgydWY4NmR6ZWx1ZXBxbWR6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UVqjochYRlbMQ/giphy.gif",
+      image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       options: [
         "Usar la misma contraseña para todo",
         "Combinar letras, números y símbolos",
@@ -41,7 +41,7 @@ export const youthQuestions = {
     {
       question: "¿Qué debes hacer si alguien te acosa en línea?",
       icon: "AlertTriangle",
-      image: "https://images.unsplash.com/photo-1593642632823-8f785b8c8c8c",
+      image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzI0MGQ2YzJkYTM4ZDM4ZjY5ZjE4ZDM4ZmQ5ZjY5ZjE4ZDM4ZmQ5ZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/JrXc72Jzc1j9kw4piV/giphy.gif",
       options: [
         "Ignorarlo y esperar que pare",
         "Reportar, bloquear y avisar a un adulto de confianza",
