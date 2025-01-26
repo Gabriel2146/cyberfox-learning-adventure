@@ -1,7 +1,7 @@
 export const youthQuestions = {
   "personal-info": [
     {
-      type: "text",
+      type: "text" as const,
       question: "Imagina que estás jugando tu videojuego favorito en línea y alguien te pide tu dirección para enviarte un regalo. ¿Qué le responderías y por qué?",
       context: "En los juegos en línea, a veces podemos encontrar personas que quieren ser nuestros amigos. Aunque pueden parecer amigables, debemos ser muy cuidadosos con la información que compartimos.",
       icon: "Lock",
@@ -16,7 +16,7 @@ export const youthQuestions = {
   ],
   "passwords": [
     {
-      type: "multiple-choice",
+      type: "multiple-choice" as const,
       question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       context: "Las contraseñas son como las llaves de tu casa digital. Así como no dejarías la puerta de tu casa sin llave, tampoco debes usar contraseñas débiles en tus cuentas.",
       icon: "KeyRound",
@@ -37,7 +37,7 @@ export const youthQuestions = {
   ],
   "online-safety": [
     {
-      type: "text",
+      type: "text" as const,
       question: "Tu mejor amigo te cuenta que alguien lo está molestando en línea y no sabe qué hacer. ¿Qué consejo le darías para ayudarlo?",
       context: "El internet es como un patio de juegos gigante donde podemos encontrar amigos, pero también personas que no se comportan bien. Es importante saber cómo actuar cuando alguien nos molesta.",
       icon: "AlertTriangle",
@@ -52,7 +52,7 @@ export const youthQuestions = {
   ],
   "cyberbullying": [
     {
-      type: "multiple-choice",
+      type: "multiple-choice" as const,
       question: "¿Qué es el ciberacoso?",
       context: "Así como en el patio de la escuela algunos niños pueden molestar a otros, en internet también puede ocurrir algo similar. Es importante reconocerlo para poder detenerlo.",
       icon: "Users",
@@ -73,7 +73,7 @@ export const youthQuestions = {
   ],
   "digital-footprint": [
     {
-      type: "multiple-choice",
+      type: "multiple-choice" as const,
       question: "¿Qué es la huella digital?",
       context: "Cada vez que usamos internet, dejamos rastros, como cuando dejamos huellas en la arena de la playa. Estas huellas digitales pueden permanecer por mucho tiempo.",
       icon: "FileCheck",

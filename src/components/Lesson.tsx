@@ -53,6 +53,7 @@ const getIconComponent = (iconName: string) => {
 const seniorQuestions: QuestionSet = {
   "basic-security": [
     {
+      type: "multiple-choice",
       question: "¿Qué es un antivirus y por qué es importante tenerlo?",
       icon: "Shield",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
@@ -72,6 +73,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "mobile-security": [
     {
+      type: "multiple-choice",
       question: "¿Qué precauciones debe tomar al usar su teléfono móvil?",
       options: [
         "No usar contraseña",
@@ -89,6 +91,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "wifi-security": [
     {
+      type: "multiple-choice",
       question: "¿Cómo identificar una red WiFi segura?",
       options: [
         "Todas las redes son seguras",
@@ -106,6 +109,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "banking-security": [
     {
+      type: "multiple-choice",
       question: "¿Qué medidas debe tomar al usar banca en línea?",
       options: [
         "Usar WiFi público",
@@ -123,6 +127,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "password-management": [
     {
+      type: "multiple-choice",
       question: "¿Cómo crear y mantener contraseñas seguras?",
       options: [
         "Usar la misma para todo",
@@ -140,6 +145,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "email-security": [
     {
+      type: "multiple-choice",
       question: "¿Cómo identificar un correo electrónico fraudulento?",
       options: [
         "Abrir todos los enlaces",
@@ -157,6 +163,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "social-networks": [
     {
+      type: "multiple-choice",
       question: "¿Qué configuración de privacidad debe usar en redes sociales?",
       options: [
         "Perfil público",
@@ -174,6 +181,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "online-shopping": [
     {
+      type: "multiple-choice",
       question: "¿Cómo realizar compras seguras en internet?",
       options: [
         "Usar cualquier sitio",
@@ -191,6 +199,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "digital-services": [
     {
+      type: "multiple-choice",
       question: "¿Cómo usar servicios digitales gubernamentales de forma segura?",
       options: [
         "Usar cualquier sitio",
@@ -208,6 +217,7 @@ const seniorQuestions: QuestionSet = {
   ],
   "scam-prevention": [
     {
+      type: "multiple-choice",
       question: "¿Cómo identificar y evitar estafas comunes en línea?",
       options: [
         "Confiar en todos",
