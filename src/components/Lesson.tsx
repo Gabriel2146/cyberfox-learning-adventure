@@ -7,7 +7,7 @@ import { seniorQuestions } from "./questions/SeniorQuestions";
 import { ProgressBar } from "./lesson/ProgressBar";
 import { MultipleChoiceQuestion } from "./lesson/MultipleChoiceQuestion";
 import { TextQuestion } from "./lesson/TextQuestion";
-import { Question } from "../types/questions";
+import { Question, MultipleChoiceQuestion as MultipleChoiceQuestionType, TextQuestion as TextQuestionType } from "../types/questions";
 
 const Lesson = () => {
   const { lessonId } = useParams();
@@ -71,13 +71,13 @@ const Lesson = () => {
   };
 
   const handleMultipleChoiceAnswer = (selectedIndex: number) => {
-    const question = allQuestions[currentQuestion] as MultipleChoiceQuestion;
+    const question = allQuestions[currentQuestion] as MultipleChoiceQuestionType;
     const isCorrect = selectedIndex === question.correctAnswer;
     handleAnswerFeedback(isCorrect);
   };
 
   const handleTextAnswer = (answer: string) => {
-    const question = allQuestions[currentQuestion] as TextQuestion;
+    const question = allQuestions[currentQuestion] as TextQuestionType;
     const normalizedAnswer = answer.toLowerCase().trim();
     const isCorrect = question.correctAnswers.some(
       correctAnswer => normalizedAnswer.includes(correctAnswer.toLowerCase())
