@@ -1,7 +1,7 @@
-import { TextQuestion as TextQuestionType } from "../types/questions";
+import { TextQuestion as TextQuestionType } from "../../types/questions";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { IconComponent } from "./IconComponent";
+import { getIconComponent } from "./IconComponent";
 import { useState } from "react";
 
 interface TextQuestionProps {

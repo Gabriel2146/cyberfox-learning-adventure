@@ -1,5 +1,5 @@
-import { MultipleChoiceQuestion as MultipleChoiceQuestionType } from "../types/questions";
-import { IconComponent } from "./IconComponent";
+import { MultipleChoiceQuestion as MultipleChoiceQuestionType } from "../../types/questions";
+import { getIconComponent } from "./IconComponent";
 
 interface MultipleChoiceQuestionProps {
   question: MultipleChoiceQuestionType;
