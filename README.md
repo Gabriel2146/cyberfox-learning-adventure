@@ -1,52 +1,58 @@
-# Bienvenido 
+# Welcome to your Lovable project
 
-## Información del Proyecto
+## Project info
 
-Este proyecto es desarrollado por Gabriel Padilla, Jonatan Granja y Mario Lopez.
+**URL**: https://lovable.dev/projects/65dd45d1-905f-438e-9a81-700f909e95f3
 
-## ¿Cómo Puedo Editar Este Código?
+## How can I edit this code?
 
-Hay varias maneras de editar tu aplicación:
+There are several ways of editing your application.
 
-### Usa Tu IDE Preferido
+**Use Lovable**
 
-Si deseas trabajar localmente utilizando tu propio IDE, puedes clonar este repositorio y subir los cambios. Los cambios realizados se reflejarán en el repositorio.
+Simply visit the [Lovable Project](https://lovable.dev/projects/65dd45d1-905f-438e-9a81-700f909e95f3) and start prompting.
 
-El único requisito es tener Node.js y npm instalados - [instalar con nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Changes made via Lovable will be committed automatically to this repo.
 
-Sigue estos pasos:
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
 
 ```sh
-# Paso 1: Clona el repositorio usando la URL Git del proyecto.
-git clone <TU_URL_GIT>
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-# Paso 2: Navega al directorio del proyecto.
-cd <TU_NOMBRE_DE_PROYECTO>
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-# Paso 3: Instala las dependencias necesarias.
+# Step 3: Install the necessary dependencies.
 npm i
 
-# Paso 4: Inicia el servidor de desarrollo con recarga automática y una vista previa instantánea.
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-### Edita un Archivo Directamente en GitHub
+**Edit a file directly in GitHub**
 
-- Navega al archivo(s) deseado.
-- Haz clic en el botón "Editar" (icono de lápiz) en la parte superior derecha de la vista del archivo.
-- Realiza tus cambios y confirma los cambios.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-### Usa GitHub Codespaces
+**Use GitHub Codespaces**
 
-- Navega a la página principal de tu repositorio.
-- Haz clic en el botón "Code" (botón verde) cerca de la parte superior derecha.
-- Selecciona la pestaña "Codespaces".
-- Haz clic en "New codespace" para lanzar un nuevo entorno de Codespace.
-- Edita los archivos directamente dentro del Codespace y confirma y sube tus cambios cuando termines.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## ¿Qué Tecnologías Se Utilizan en Este Proyecto?
+## What technologies are used for this project?
 
-Este proyecto está construido con:
+This project is built with .
 
 - Vite
 - TypeScript
@@ -54,6 +60,10 @@ Este proyecto está construido con:
 - shadcn-ui
 - Tailwind CSS
 
-##
+## How can I deploy this project?
 
+Simply open [Lovable](https://lovable.dev/projects/65dd45d1-905f-438e-9a81-700f909e95f3) and click on Share -> Publish.
 
+## I want to use a custom domain - is that possible?
+
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)

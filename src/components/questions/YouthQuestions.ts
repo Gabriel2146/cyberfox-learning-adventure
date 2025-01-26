@@ -1,197 +1,191 @@
 export const youthQuestions = {
   "personal-info": [
     {
-      question: "¿Qué información personal no debes compartir en internet?",
-      context: "Imagina que estás jugando tu videojuego favorito en línea y alguien que no conoces te pide información sobre ti. Es importante saber qué información podemos compartir y cuál debemos mantener privada para estar seguros.",
+      question: "¿Qué información personal no debes compartir en redes sociales?",
       icon: "Lock",
-      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop",
       options: [
-        "Mi película y color favoritos",
-        "Mi dirección y teléfono",
-        "Los juegos que me gustan",
-        "Mi comida favorita",
+        "Tu película favorita",
+        "Tu dirección y número de teléfono",
+        "Tus hobbies",
+        "Tu color favorito",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Tu dirección y teléfono son información privada que debes mantener segura.",
-        incorrect: "Recuerda que tu dirección y teléfono son información privada que no debes compartir con extraños en internet.",
-        funFact: "¿Sabías que? Así como guardas la llave de tu casa para mantenerla segura, debes guardar tu información personal para mantenerte seguro en internet."
+        correct: "¡Correcto! Nunca debes compartir información privada como tu dirección o teléfono en redes sociales.",
+        incorrect: "Debes proteger tu información personal. Tu dirección y número de teléfono son datos privados que no debes compartir en redes sociales.",
+        funFact: "¿Sabías que? Más del 70% de los jóvenes comparten información personal en redes sociales sin darse cuenta de los riesgos."
       }
     }
   ],
   "passwords": [
     {
-      question: "¿Cuál es la mejor contraseña para tus cuentas?",
-      context: "Tu contraseña es como la llave mágica que protege todos tus secretos en internet. Así como no usarías una llave muy simple para tu cofre del tesoro, tampoco debes usar una contraseña muy simple para tus cuentas.",
+      question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       icon: "KeyRound",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+      image: "https://images.unsplash.com/photo-1633265486064-086b219458ec?w=800&auto=format&fit=crop",
       options: [
-        "123456",
-        "Una combinación de letras, números y símbolos como 'Gat0#2024!'",
-        "Mi nombre",
-        "La palabra 'contraseña'",
+        "Usar la misma contraseña para todo",
+        "Combinar letras, números y símbolos",
+        "Usar tu fecha de nacimiento",
+        "Usar palabras del diccionario",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! Una contraseña fuerte es como un escudo protector para tus cuentas.",
-        incorrect: "Una contraseña segura debe ser difícil de adivinar, usando letras, números y símbolos.",
-        funFact: "¿Sabías que? Los superhéroes usan disfraces para proteger su identidad, ¡y tú puedes usar contraseñas fuertes para proteger la tuya!"
+        correct: "¡Exacto! Una contraseña segura debe combinar diferentes tipos de caracteres.",
+        incorrect: "Las contraseñas más seguras combinan letras, números y símbolos para mayor protección.",
+        funFact: "¿Sabías que? El 81% de las violaciones de datos son causadas por contraseñas débiles."
       }
     }
   ],
   "online-safety": [
     {
-      question: "¿Qué debes hacer si alguien te hace sentir incómodo en internet?",
-      context: "A veces, mientras jugamos o chateamos en internet, podemos encontrarnos con personas que no son amables o nos hacen sentir mal. Es importante saber qué hacer en estas situaciones, igual que sabes qué hacer si alguien te molesta en el patio de la escuela.",
-      icon: "Shield",
-      image: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1",
+      question: "¿Qué debes hacer si alguien te acosa en línea?",
+      icon: "AlertTriangle",
+      image: "https://images.unsplash.com/photo-1590424946952-7e9f06295e52?w=800&auto=format&fit=crop",
       options: [
-        "Ignorarlo y seguir jugando",
-        "Decirle a mis padres o un adulto de confianza inmediatamente",
-        "Responderle de la misma manera",
-        "Darle mi información para que me deje en paz",
+        "Ignorarlo y esperar que pare",
+        "Reportar, bloquear y avisar a un adulto de confianza",
+        "Responder de la misma manera",
+        "Borrar tu cuenta",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Siempre es importante hablar con un adulto de confianza cuando algo nos hace sentir mal.",
-        incorrect: "Recuerda que los adultos de confianza están para ayudarte cuando algo te hace sentir incómodo en internet.",
-        funFact: "¿Sabías que? Así como los pájaros vuelan juntos para protegerse, es más seguro navegar por internet con la ayuda de tus padres o tutores."
+        correct: "¡Correcto! Es importante tomar acción y buscar ayuda cuando alguien te acosa en línea.",
+        incorrect: "La mejor manera de manejar el acoso en línea es reportar al acosador, bloquearlo y hablar con un adulto de confianza.",
+        funFact: "¿Sabías que? El 59% de los jóvenes han sido acosados en línea, y muchos no lo reportan."
       }
     }
   ],
   "cyberbullying": [
     {
-      question: "Si ves que están molestando a un amigo en línea, ¿qué debes hacer?",
-      context: "El acoso en internet es como cuando alguien molesta a otros en el patio de la escuela, pero puede ser incluso más doloroso porque muchas personas pueden verlo. Todos podemos ayudar a detener el acoso.",
-      icon: "AlertTriangle",
-      image: "https://images.unsplash.com/photo-1498936178812-4b2e558d2937",
+      question: "¿Qué es el ciberacoso?",
+      icon: "Users",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&auto=format&fit=crop",
       options: [
-        "No hacer nada, no es mi problema",
-        "Apoyar a mi amigo, reportar el acoso y decirle a un adulto",
-        "Unirme a las burlas",
-        "Compartir los mensajes con otros amigos",
+        "Un juego en línea",
+        "Acosar o intimidar a alguien usando medios digitales",
+        "Una red social",
+        "Un tipo de virus",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! Eres un buen amigo al ayudar a detener el acoso.",
-        incorrect: "Es importante ayudar a nuestros amigos cuando alguien los molesta, igual que lo haríamos en la vida real.",
-        funFact: "¿Sabías que? Cuando ayudas a alguien que está siendo acosado, te conviertes en un héroe de la vida real."
+        correct: "¡Correcto! El ciberacoso es una forma de acoso que ocurre a través de medios digitales.",
+        incorrect: "El ciberacoso es cuando alguien usa medios digitales para acosar, intimidar o molestar a otros.",
+        funFact: "¿Sabías que? El 34% de los estudiantes han experimentado ciberacoso en algún momento."
       }
     }
   ],
   "digital-footprint": [
     {
-      question: "¿Qué pasa con las fotos y mensajes que publicas en internet?",
-      context: "Cada vez que publicas algo en internet, es como dejar una huella en la arena de la playa. Pero a diferencia de las huellas en la arena que se borran con las olas, las huellas digitales pueden quedarse para siempre.",
+      question: "¿Qué es la huella digital?",
       icon: "FileCheck",
-      image: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632",
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&auto=format&fit=crop",
       options: [
-        "Desaparecen al día siguiente",
-        "Se quedan para siempre y cualquiera puede verlas en el futuro",
-        "Solo mis amigos pueden verlas",
-        "Se borran cuando apago la computadora",
+        "Una app de fotografía",
+        "El rastro de información que dejas en internet",
+        "Un tipo de contraseña",
+        "Un dispositivo electrónico",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Todo lo que publicas en internet puede quedarse ahí para siempre.",
-        incorrect: "Las cosas que publicamos en internet pueden quedarse ahí para siempre, como una fotografía que no se puede borrar.",
-        funFact: "¿Sabías que? Cada día se suben millones de fotos a internet, ¡por eso es importante pensar bien antes de publicar!"
+        correct: "¡Exacto! Tu huella digital es toda la información que dejas al usar internet.",
+        incorrect: "La huella digital es el rastro de información que dejas cuando usas internet, incluyendo publicaciones, comentarios y likes.",
+        funFact: "¿Sabías que? El 90% de los datos en el mundo se han creado en los últimos dos años."
       }
     }
   ],
   "critical-thinking": [
     {
-      question: "¿Cómo sabes si algo que lees en internet es verdad?",
-      context: "Internet es como una gran biblioteca donde cualquiera puede escribir historias. Algunas son verdaderas y otras no. Es importante aprender a distinguir entre la verdad y las mentiras.",
-      icon: "Brain",
-      image: "https://images.unsplash.com/photo-1501286353178-1ec881214838",
+      question: "¿Cómo identificar información falsa en internet?",
+      icon: "AlertTriangle",
+      image: "https://images.unsplash.com/photo-1576267423048-15c0040fec78?w=800&auto=format&fit=crop",
       options: [
-        "Si tiene muchos likes debe ser verdad",
-        "Pregunto a mis padres y verifico en sitios confiables",
-        "Si un amigo lo compartió es verdad",
-        "Todo lo que está en internet es verdad",
+        "Creer todo lo que veo",
+        "Verificar fuentes y contrastar información",
+        "Compartir sin leer",
+        "Ignorar todas las noticias",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Es importante verificar la información con adultos de confianza.",
-        incorrect: "No todo lo que vemos en internet es verdad, siempre debemos verificar con adultos de confianza.",
-        funFact: "¿Sabías que? Los científicos siempre verifican sus descubrimientos varias veces antes de decir que algo es verdad."
+        correct: "¡Bien hecho! Es importante verificar las fuentes y contrastar la información.",
+        incorrect: "Para identificar información falsa, debes verificar las fuentes y contrastar la información con sitios confiables.",
+        funFact: "¿Sabías que? El 64% de los adultos no pueden distinguir entre noticias falsas y reales."
       }
     }
   ],
   "digital-relationships": [
     {
-      question: "¿Qué debes hacer si alguien que conociste en internet quiere encontrarse contigo?",
-      context: "Así como tus padres te enseñaron a no hablar con extraños en la calle, también debes tener cuidado con las personas que conoces en internet. No todos son quienes dicen ser.",
+      question: "¿Qué precauciones debes tomar al hacer amigos en línea?",
       icon: "Users",
+      image: "https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?w=800&auto=format&fit=crop",
       options: [
-        "Ir al encuentro sin decirle a nadie",
-        "Decirle inmediatamente a mis padres o un adulto de confianza",
-        "Darle mi dirección para que venga a mi casa",
-        "Encontrarme con ellos en secreto",
+        "Compartir toda tu información",
+        "No compartir información personal y ser cauteloso",
+        "Encontrarse en persona inmediatamente",
+        "Ignorar los consejos de seguridad",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Muy bien! Siempre debes contarle a tus padres o un adulto de confianza sobre este tipo de situaciones.",
-        incorrect: "Nunca debes encontrarte con alguien que conociste en internet sin el conocimiento y supervisión de tus padres.",
-        funFact: "¿Sabías que? Las personas en internet pueden fingir ser alguien que no son, como en un disfraz de Halloween."
+        correct: "¡Correcto! Es importante ser cauteloso y proteger tu información personal.",
+        incorrect: "Al hacer amigos en línea, debes ser cauteloso y nunca compartir información personal.",
+        funFact: "¿Sabías que? El 50% de los jóvenes han compartido información personal con extraños en línea."
       }
     }
   ],
   "gaming-safety": [
     {
-      question: "¿Qué debes hacer mientras juegas en línea?",
-      context: "Los videojuegos en línea son divertidos y puedes conocer a otros jugadores, pero también debes mantenerte seguro mientras te diviertes.",
+      question: "¿Qué medidas de seguridad debes tomar al jugar en línea?",
       icon: "Shield",
+      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop",
       options: [
-        "Dar mi información personal a otros jugadores",
-        "Usar un apodo y no compartir información personal",
-        "Aceptar todas las invitaciones de juego",
-        "Descargar todos los archivos que me envíen",
+        "Usar tu nombre real",
+        "Usar un nickname y no compartir datos personales",
+        "Compartir tu ubicación",
+        "Aceptar todas las solicitudes de amistad",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Excelente! Es más seguro usar un apodo y mantener tu información personal privada.",
-        incorrect: "Cuando juegas en línea, es más seguro usar un apodo y nunca compartir información personal.",
-        funFact: "¿Sabías que? Los mejores jugadores profesionales también usan apodos para proteger su identidad."
+        correct: "¡Exacto! Es más seguro usar un nickname y mantener tu información personal privada.",
+        incorrect: "Al jugar en línea, es más seguro usar un nickname y nunca compartir información personal.",
+        funFact: "¿Sabías que? El 70% de los jugadores en línea han sido contactados por extraños."
       }
     }
   ],
   "content-creation": [
     {
-      question: "¿Qué tipo de contenido es seguro crear y compartir en internet?",
-      context: "Crear y compartir contenido en internet puede ser muy divertido, como mostrar tus dibujos o contar historias. Pero es importante saber qué es seguro compartir.",
+      question: "¿Qué debes considerar antes de publicar contenido en línea?",
       icon: "FileCheck",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop",
       options: [
-        "Fotos de mi casa y mi escuela",
-        "Contenido divertido que no revele información personal",
-        "Videos con mi dirección",
-        "Fotos de mis documentos importantes",
+        "Publicar sin pensar",
+        "El impacto y la privacidad del contenido",
+        "Ignorar la configuración de privacidad",
+        "Compartir todo lo que ves",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Genial! Puedes compartir contenido divertido mientras mantienes tu información personal segura.",
-        incorrect: "Es importante compartir solo contenido que no revele información personal o privada.",
-        funFact: "¿Sabías que? Los creadores de contenido más exitosos son muy cuidadosos con su información personal."
+        correct: "¡Correcto! Es importante pensar en el impacto y la privacidad antes de publicar.",
+        incorrect: "Antes de publicar contenido, debes considerar su impacto y configurar adecuadamente la privacidad.",
+        funFact: "¿Sabías que? Una vez que publicas algo en línea, puede ser difícil eliminarlo por completo."
       }
     }
   ],
   "sharing-online": [
     {
-      question: "¿Qué debes hacer antes de compartir una foto de tus amigos?",
-      context: "Compartir fotos es divertido, pero así como te gusta que te pidan permiso para usar tus cosas, debes pedir permiso antes de compartir fotos de otros.",
+      question: "¿Qué tipo de contenido es apropiado compartir en línea?",
       icon: "FileCheck",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&auto=format&fit=crop",
       options: [
-        "Compartirla sin preguntar",
-        "Pedir permiso a tus amigos y sus padres",
-        "Editarla primero",
-        "Compartirla solo con algunos amigos",
+        "Información privada",
+        "Contenido respetuoso y apropiado para tu edad",
+        "Fotos de otros sin permiso",
+        "Datos personales de amigos",
       ],
       correctAnswer: 1,
       feedback: {
-        correct: "¡Correcto! Siempre debes pedir permiso antes de compartir fotos de otras personas.",
-        incorrect: "Es importante pedir permiso antes de compartir fotos de otros, respetando su privacidad.",
-        funFact: "¿Sabías que? En muchos países hay leyes que protegen el derecho a la privacidad de las personas en las fotos."
+        correct: "¡Bien! Solo debes compartir contenido respetuoso y apropiado para tu edad.",
+        incorrect: "Es importante compartir solo contenido respetuoso y apropiado para tu edad, respetando la privacidad de otros.",
+        funFact: "¿Sabías que? Compartir contenido inapropiado puede tener consecuencias legales."
       }
     }
   ]
