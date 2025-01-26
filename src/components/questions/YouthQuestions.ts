@@ -49,6 +49,7 @@ export const youthQuestions = {
   ],
   "cyberbullying": [
     {
+      type: "multiple-choice",
       question: "¿Qué es el ciberacoso?",
       icon: "Users",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&auto=format&fit=crop",
@@ -68,6 +69,7 @@ export const youthQuestions = {
   ],
   "digital-footprint": [
     {
+      type: "multiple-choice",
       question: "¿Qué es la huella digital?",
       icon: "FileCheck",
       image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&auto=format&fit=crop",
@@ -87,6 +89,7 @@ export const youthQuestions = {
   ],
   "critical-thinking": [
     {
+      type: "multiple-choice",
       question: "¿Cómo identificar información falsa en internet?",
       icon: "AlertTriangle",
       image: "https://images.unsplash.com/photo-1576267423048-15c0040fec78?w=800&auto=format&fit=crop",
@@ -106,6 +109,7 @@ export const youthQuestions = {
   ],
   "digital-relationships": [
     {
+      type: "multiple-choice",
       question: "¿Qué precauciones debes tomar al hacer amigos en línea?",
       icon: "Users",
       image: "https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?w=800&auto=format&fit=crop",
@@ -125,6 +129,7 @@ export const youthQuestions = {
   ],
   "gaming-safety": [
     {
+      type: "multiple-choice",
       question: "¿Qué medidas de seguridad debes tomar al jugar en línea?",
       icon: "Shield",
       image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop",
@@ -144,6 +149,7 @@ export const youthQuestions = {
   ],
   "content-creation": [
     {
+      type: "multiple-choice",
       question: "¿Qué debes considerar antes de publicar contenido en línea?",
       icon: "FileCheck",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop",
@@ -163,6 +169,7 @@ export const youthQuestions = {
   ],
   "sharing-online": [
     {
+      type: "multiple-choice",
       question: "¿Qué tipo de contenido es apropiado compartir en línea?",
       icon: "FileCheck",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&auto=format&fit=crop",

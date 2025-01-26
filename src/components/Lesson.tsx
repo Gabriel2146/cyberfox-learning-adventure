@@ -267,6 +267,11 @@ const Lesson = () => {
 
   const handleTextAnswer = () => {
     const question = allQuestions[currentQuestion] as TextQuestion;
+    if (!question.correctAnswers) {
+      console.error("No correctAnswers found for text question:", question);
+      return;
+    }
+    
     const normalizedAnswer = textAnswer.toLowerCase().trim();
     const isCorrect = question.correctAnswers.some(
       answer => normalizedAnswer.includes(answer.toLowerCase())
