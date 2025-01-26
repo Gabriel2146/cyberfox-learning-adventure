@@ -2,20 +2,33 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { ArrowLeft, Shield, Lock, AlertTriangle, Wifi, CreditCard, KeyRound, Mail, Users, ShoppingCart, FileCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { youthQuestions } from "./questions/YouthQuestions";
 
-interface Question {
+interface QuestionBase {
   question: string;
   icon?: string;
   image?: string;
-  options: string[];
-  correctAnswer: number;
   feedback: {
     correct: string;
     incorrect: string;
     funFact: string;
   };
 }
+
+interface MultipleChoiceQuestion extends QuestionBase {
+  type: 'multiple-choice';
+  options: string[];
+  correctAnswer: number;
+}
+
+interface TextQuestion extends QuestionBase {
+  type: 'text';
+  correctAnswers: string[];
+}
+
+type Question = MultipleChoiceQuestion | TextQuestion;
 
 interface QuestionSet {
   [key: string]: Question[];
@@ -222,6 +235,7 @@ const Lesson = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
+  const [textAnswer, setTextAnswer] = useState("");
 
   console.log(`Rendering Lesson component for lesson: ${lessonId}, age group: ${ageGroup}, mode: ${mode}`);
 
@@ -245,9 +259,23 @@ const Lesson = () => {
     return null;
   }
 
-  const handleAnswer = (selectedIndex: number) => {
-    console.log(`Selected answer: ${selectedIndex}`);
-    const isCorrect = selectedIndex === allQuestions[currentQuestion].correctAnswer;
+  const handleMultipleChoiceAnswer = (selectedIndex: number) => {
+    const question = allQuestions[currentQuestion] as MultipleChoiceQuestion;
+    const isCorrect = selectedIndex === question.correctAnswer;
+    handleAnswerFeedback(isCorrect);
+  };
+
+  const handleTextAnswer = () => {
+    const question = allQuestions[currentQuestion] as TextQuestion;
+    const normalizedAnswer = textAnswer.toLowerCase().trim();
+    const isCorrect = question.correctAnswers.some(
+      answer => normalizedAnswer.includes(answer.toLowerCase())
+    );
+    handleAnswerFeedback(isCorrect);
+    setTextAnswer("");
+  };
+
+  const handleAnswerFeedback = (isCorrect: boolean) => {
     const feedback = allQuestions[currentQuestion].feedback;
     
     toast({
@@ -318,15 +346,32 @@ const Lesson = () => {
           )}
 
           <div className="grid gap-4">
-            {currentQuestionData.options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswer(index)}
-                className="p-4 border-2 border-white/20 rounded-lg text-left hover:border-primary hover:bg-primary/10 transition-colors button-hover text-white"
-              >
-                {option}
-              </button>
-            ))}
+            {currentQuestionData.type === 'multiple-choice' ? (
+              (currentQuestionData as MultipleChoiceQuestion).options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleMultipleChoiceAnswer(index)}
+                  className="p-4 border-2 border-white/20 rounded-lg text-left hover:border-primary hover:bg-primary/10 transition-colors button-hover text-white"
+                >
+                  {option}
+                </button>
+              ))
+            ) : (
+              <div className="space-y-4">
+                <Input
+                  value={textAnswer}
+                  onChange={(e) => setTextAnswer(e.target.value)}
+                  placeholder="Escribe tu respuesta aquí..."
+                  className="bg-white/5 border-white/20 text-white placeholder:text-white/50"
+                />
+                <Button 
+                  onClick={handleTextAnswer}
+                  className="w-full"
+                >
+                  Enviar Respuesta
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </div>

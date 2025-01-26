@@ -1,25 +1,21 @@
 export const youthQuestions = {
   "personal-info": [
     {
-      question: "¿Qué información personal no debes compartir en redes sociales?",
+      type: "text",
+      question: "Imagina que estás jugando tu videojuego favorito en línea y alguien te pide tu dirección para enviarte un regalo. ¿Qué le responderías y por qué?",
       icon: "Lock",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop",
-      options: [
-        "Tu película favorita",
-        "Tu dirección y número de teléfono",
-        "Tus hobbies",
-        "Tu color favorito",
-      ],
-      correctAnswer: 1,
+      correctAnswers: ["no", "nunca", "no debo", "no se debe", "no compartir", "peligroso", "privado"],
       feedback: {
-        correct: "¡Correcto! Nunca debes compartir información privada como tu dirección o teléfono en redes sociales.",
-        incorrect: "Debes proteger tu información personal. Tu dirección y número de teléfono son datos privados que no debes compartir en redes sociales.",
-        funFact: "¿Sabías que? Más del 70% de los jóvenes comparten información personal en redes sociales sin darse cuenta de los riesgos."
+        correct: "¡Excelente respuesta! Es muy importante nunca compartir información personal con desconocidos en línea.",
+        incorrect: "Recuerda que nunca debes compartir información personal con desconocidos en línea, incluso si ofrecen regalos.",
+        funFact: "¿Sabías que? Los estafadores en línea a menudo intentan ganarse la confianza de los niños ofreciendo regalos o premios."
       }
     }
   ],
   "passwords": [
     {
+      type: "multiple-choice",
       question: "¿Cuál es una buena práctica para crear contraseñas seguras?",
       icon: "KeyRound",
       image: "https://images.unsplash.com/photo-1633265486064-086b219458ec?w=800&auto=format&fit=crop",
@@ -39,20 +35,15 @@ export const youthQuestions = {
   ],
   "online-safety": [
     {
-      question: "¿Qué debes hacer si alguien te acosa en línea?",
+      type: "text",
+      question: "Tu mejor amigo te cuenta que alguien lo está molestando en línea y no sabe qué hacer. ¿Qué consejo le darías para ayudarlo?",
       icon: "AlertTriangle",
       image: "https://images.unsplash.com/photo-1590424946952-7e9f06295e52?w=800&auto=format&fit=crop",
-      options: [
-        "Ignorarlo y esperar que pare",
-        "Reportar, bloquear y avisar a un adulto de confianza",
-        "Responder de la misma manera",
-        "Borrar tu cuenta",
-      ],
-      correctAnswer: 1,
+      correctAnswers: ["adulto", "padres", "profesor", "reportar", "bloquear", "ayuda", "contar", "decir"],
       feedback: {
-        correct: "¡Correcto! Es importante tomar acción y buscar ayuda cuando alguien te acosa en línea.",
-        incorrect: "La mejor manera de manejar el acoso en línea es reportar al acosador, bloquearlo y hablar con un adulto de confianza.",
-        funFact: "¿Sabías que? El 59% de los jóvenes han sido acosados en línea, y muchos no lo reportan."
+        correct: "¡Muy bien! Es importante buscar ayuda de un adulto de confianza y reportar el acoso.",
+        incorrect: "Recuerda que lo mejor es buscar ayuda de un adulto de confianza y reportar la situación.",
+        funFact: "¿Sabías que? El 60% de los jóvenes han sido testigos de ciberacoso, pero muchos no lo reportan por miedo."
       }
     }
   ],
